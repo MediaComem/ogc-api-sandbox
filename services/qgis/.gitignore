@@ -1,0 +1,4 @@
+data/*-shm
+data/*-wal
+data/qgis-auth.db
+data/*~

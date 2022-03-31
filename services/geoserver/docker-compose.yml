@@ -1,0 +1,51 @@
+version: '3.3'
+
+services:
+
+  geoserver:
+    
+    image: ${DOCKER_IMAGE}
+
+    container_name: ${SERVICE_NAME}
+
+    expose:
+      - "8080"
+
+#    ports:
+#      - "8080:80"
+
+
+    environment:
+      # Use custom uid's, otherwise Tomcat uid from container is taken
+      # See issue: https://github.com/Geonovum/ogc-api-testbed/issues/25
+      - CUSTOM_UID=${HOST_UID}
+      - CUSTOM_GID=${HOST_GID}
+      - GEOSERVER_CSRF_DISABLED=true
+      - GEOSERVER_CSRF_WHITELIST=${TRAEFIK_DOMAIN}
+
+    volumes:
+      # Map data and config into GeoServer container
+      - ./data:/var/local/geoserver
+      - ./exts:/var/local/geoserver-exts
+
+    labels:
+      # Enable Traefik routing on overlay service network
+      - "traefik.enable=true"
+      - "traefik.docker.network=service-network"
+
+      # SSL/https router
+      - "traefik.http.routers.${SERVICE_NAME}_https.rule=Host(`${TRAEFIK_SSL_DOMAIN}`) && PathPrefix(`${SERVICE_PATH}`)"
+      - "traefik.http.routers.${SERVICE_NAME}_https.entrypoints=https"
+      - "traefik.http.routers.${SERVICE_NAME}_https.tls=${TRAEFIK_USE_TLS}"
+      - "traefik.http.routers.${SERVICE_NAME}_https.tls.certresolver=${TRAEFIK_SSL_CERT_RESOLVER}"
+      - "traefik.http.routers.${SERVICE_NAME}_https.tls.options=my_default@file"
+      - "traefik.http.routers.${SERVICE_NAME}_https.middlewares=secure-headers@file"
+
+      # local http router
+      - "traefik.http.routers.${SERVICE_NAME}_http.rule=Host(`localhost`) && PathPrefix(`${SERVICE_PATH}`)"
+      - "traefik.http.routers.${SERVICE_NAME}_http.entrypoints=http"
+
+networks:
+  default:
+    external:
+      name: service-network

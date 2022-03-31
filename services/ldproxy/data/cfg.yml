@@ -1,0 +1,6 @@
+server:
+  externalUrl: https://apitestbed.geonovum.nl/ldproxy
+logging:
+  level: DEBUG
+  appenders:
+    - type: console

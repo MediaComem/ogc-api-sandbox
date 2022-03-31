@@ -1,0 +1,89 @@
+# Inspired from https://github.com/5car1z/ansible-debian-provisioning
+- name: "ogcapi Ubuntu Server Setup"
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  vars_files:
+    - vars/vars.yml
+
+  roles:
+    # https://github.com/sansible/users_and_groups
+    - name: sansible.users_and_groups
+      tags: users
+      sansible_users_and_groups_users:
+        - name: "{{ my_admin_user }}"
+          system: yes
+          shell: /bin/bash
+          ssh_key: "{{ my_ssh_pubkey_file }}"
+          append: yes
+      sansible_users_and_groups_sudoers:
+         - name: "{{ my_admin_user }}"
+           user: "%{{ my_admin_user }}"
+           runas: "ALL=(ALL)"
+           commands: "NOPASSWD: ALL"
+           append: yes
+
+    - name: justb4.ubuntu-base
+      tags: ubuntu-base
+
+    - name: justb4.ubuntu-ntp
+      tags: ubuntu-ntp
+
+    - name: geerlingguy.pip
+      tags: pip
+
+    # https://github.com/geerlingguy/ansible-role-docker
+    # defaults: https://github.com/geerlingguy/ansible-role-docker/blob/master/defaults/main.yml
+    - name: geerlingguy.docker
+      tags: docker
+      docker_users:
+        - "{{ my_admin_user }}"
+
+  tasks:
+
+    - name: "Set global env vars"
+      lineinfile:
+        dest: /etc/environment
+        state: present
+        regexp: '^EMAIL'
+        line: 'EMAIL={{ my_email }}'
+
+    - name: "Populate /etc/environment"
+      become: true
+      become_user: root
+      lineinfile:
+        dest: "/etc/environment"
+        state: present
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value}}"
+      with_dict: "{{ etc_environment }}"
+
+    # https://www.jeffgeerling.com/blog/2018/cloning-private-github-repositories-ansible-on-remote-server-through-ssh
+    - name: "Clone Git Repo"
+      git:
+        dest: "{{ my_git_home }}"
+        repo: "{{ my_github_repo }}"
+        clone: "yes"
+        update: "yes"
+        accept_hostkey: "yes"
+        force: "yes"
+
+    - name: "Ensure ownership to admin user of git dir"
+      ansible.builtin.file:
+        path: "{{ my_git_home }}"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+ 
+    - name: "Build Docker Images"
+      shell: "cd {{ services_home }} && ./build.sh"
+
+    # https://stackoverflow.com/questions/35984151/how-to-create-new-system-service-by-ansible-playbook
+    - name: "Service | Create Unit file"
+      template: src=templates/systemd.service.j2 dest=/lib/systemd/system/ogcapi.service mode=644
+
+    - name: "reload systemctl"
+      shell: "systemctl daemon-reload"
+    
+    - name: "Service | Start ogcapi"
+      service: name=ogcapi.service state=started enabled=yes

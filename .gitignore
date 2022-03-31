@@ -1,0 +1,34 @@
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Translations
+*.mo
+
+.DS_Store
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Flask
+instance
+tmp/
+
+# etc
+_build/
+
+# LetsEncrypt Key files
+acme.json
+
+ansible/roles/*
+!ansible/roles/.gitkeep
+
+services/geoserver/data/security
+services/postgis/pg.env
+services/postgis/pgadmin.env

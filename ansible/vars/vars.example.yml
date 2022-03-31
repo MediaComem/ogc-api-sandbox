@@ -1,0 +1,34 @@
+# EXAMPLE FILE - your encrypted vars.yml should cotnain the following vars
+---
+my_ssh_pubkey_file: ~/.ssh/id_rsa.pub
+my_email: me@ergens.nl
+my_admin_user: adminuser
+my_admin_home: "/home/{{ my_admin_user }}"
+my_git_home: "{{ my_admin_home }}/git"
+my_github_repo: https://github.com/Geonovum/ogc-api-testbed.git
+var_dir: /var/ogcapi
+logs_dir: "{{ var_dir }}/log"
+services_home: "{{ my_git_home }}/services"
+platform_home: "{{ my_git_home }}/platform"
+pip_install_packages:
+  - name: docker
+timezone: Europe/Amsterdam
+ufw_open_ports: ['22', '80', '443', ...]
+etc_environment:
+  PG_DB: the_db
+  PG_USER: the_user
+  PG_PASSWORD: the_pw
+  PGADMIN_EMAIL: the_user@the_user.nl
+  PGADMIN_PASSWORD: the_pw
+  GHC_SQLALCHEMY_DATABASE_URI: postgresql://the_user:the_pw@the_db:5432/the_db
+  GHC_ADMIN_USER_NAME: the_user
+  GHC_ADMIN_USER_PASSWORD: the_pw
+  GHC_ADMIN_USER_EMAIL: the_user@the_user.nl
+  GHC_NOTIFICATIONS_EMAIL: the_user@the_user.com
+  GHC_SMTP_EMAIL: the_user@the_user.com
+  GHC_SMTP_SERVER: smtp.gmail.com
+  GHC_SMTP_PORT: 587
+  GHC_SMTP_TLS: True
+  GHC_SMTP_SSL: False
+  GHC_SMTP_USERNAME: the_user@the_user.com
+  GHC_SMTP_PASSWORD: the_pw

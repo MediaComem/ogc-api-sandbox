@@ -1,0 +1,25 @@
+# goaf demo service 
+Runs latest [Kadaster PDOK GOAF](https://github.com/PDOK/goaf) using
+its [goaf Docker Image from DockerHub](https://hub.docker.com/r/pdok/wfs-3.0).
+
+## Deployment
+
+This service is automatically (re)deployed if anything within this directory or its subdirs changes
+when committed/pushed.
+
+A GitHub Action invokes an Ansible Playbook.
+See the following deployment files:
+
+* [GitHub Action](../../.github/workflows/deploy.goaf.yml)
+* [Ansible Playbook](../../ansible/deploy.yml)
+
+The Ansible Playbook can also be invoked directly.
+
+## New Service from Duplication
+
+Creating a new service `xyz` via duplication of this directory:
+
+* duplicate this and name it as the service e.g. `services/xyz`
+* create GitHub Action file as copy/rename from [GitHub Action](../../.github/workflows/deploy.goaf.yml) to `deploy.xyz.yml`
+* new 3 lines for `xyz` in [Ansible Playbook](../../ansible/deploy.yml)
+* the variables, mainly `SERVICE_NAME=xyz` in [env.sh](env.sh).

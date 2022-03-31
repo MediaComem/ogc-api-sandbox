@@ -1,0 +1,17 @@
+[Unit]
+Description=OgcApiSrv
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart={{services_home}}/start.sh
+ExecStop={{services_home}}/stop.sh
+User={{ my_admin_user }}
+TimeoutStartSec=600
+TimeoutStopSec=600
+
+[Install]
+WantedBy=multi-user.target

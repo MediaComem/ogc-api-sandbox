@@ -1,0 +1,5 @@
+service:
+  url: https://apitestbed.geonovum.nl/goaf
+datasource:
+  gpkg:
+    file: data/data.gpkg

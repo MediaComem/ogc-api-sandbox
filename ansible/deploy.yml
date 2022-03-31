@@ -1,0 +1,71 @@
+- name: "Update and (Re)Deploy Services"
+  hosts: all
+  gather_facts: yes
+  become_user: "{{ my_admin_user }}"
+
+  vars_files:
+    - vars/vars.yml
+
+  vars:
+    ansible_ssh_user: "{{ my_admin_user }}"
+
+  pre_tasks:
+    - name: "Populate /etc/environment"
+      become: true
+      become_user: root
+      lineinfile:
+        dest: "/etc/environment"
+        state: present
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value}}"
+      with_dict: "{{ etc_environment }}"
+
+    - name: "PRE-TASK - Clone or Update Git Repo"
+      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=main clone=yes force=yes accept_hostkey=True"
+      tags: always
+
+  post_tasks:
+    - name: "POST-TASK - Clean Dangling Docker Containers and Images"
+      shell: "cd {{ services_home }} && ./clean.sh && docker images"
+      tags: always
+
+  tasks:
+    - name: "traefik"
+      shell: "cd {{ services_home }}/traefik && ./start.sh && docker ps"
+      tags: traefik
+
+    - name: "pygeoapi"
+      shell: "cd {{ services_home }}/pygeoapi && ./deploy.sh && docker ps"
+      tags: pygeoapi
+
+    - name: "pycsw"
+      shell: "cd {{ services_home }}/pycsw && ./deploy.sh && docker ps"
+      tags: pycsw
+
+    - name: "ldproxy"
+      shell: "cd {{ services_home }}/ldproxy && ./deploy.sh && docker ps"
+      tags: ldproxy
+
+    - name: "geoserver"
+      shell: "cd {{ services_home }}/geoserver && ./deploy.sh && docker ps"
+      tags: geoserver
+
+    - name: "qgis"
+      shell: "cd {{ services_home }}/qgis && ./deploy.sh && docker ps"
+      tags: qgis
+    
+    - name: "goaf"
+      shell: "cd {{ services_home }}/goaf && ./deploy.sh && docker ps"
+      tags: goaf
+    
+    - name: "postgis"
+      shell: "cd {{ services_home }}/postgis && ./deploy.sh && docker ps"
+      tags: postgis
+
+    - name: "home"
+      shell: "cd {{ services_home }}/home && ./deploy.sh && docker ps"
+      tags: home
+
+    - name: "admin"
+      shell: "cd {{ services_home }}/admin && ./deploy.sh && docker ps"
+      tags: admin
