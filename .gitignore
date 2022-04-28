@@ -32,3 +32,7 @@ ansible/roles/*
 services/geoserver/data/security
 services/postgis/pg.env
 services/postgis/pgadmin.env
+
+# user defined
+ansible/hosts/prod.yml
+ansible/setenv.yml
