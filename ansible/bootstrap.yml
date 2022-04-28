@@ -35,10 +35,11 @@
 
     # https://github.com/geerlingguy/ansible-role-docker
     # defaults: https://github.com/geerlingguy/ansible-role-docker/blob/master/defaults/main.yml
-    - name: geerlingguy.docker
-      tags: docker
-      docker_users:
-        - "{{ my_admin_user }}"
+    # Remove this crap; doesn't work and docker is already installed.
+    #- name: geerlingguy.docker
+    #  tags: docker
+    #  docker_users:
+    #    - "{{ my_admin_user }}"
 
   tasks:
 
@@ -59,13 +60,20 @@
         line: "{{ item.key }}={{ item.value}}"
       with_dict: "{{ etc_environment }}"
 
+    - name: "Workaround permission issue"
+      shell: git config --global --add safe.directory "{{ my_git_home }}"
+
+    - name: "Add user to docker group."
+      become_user: root
+      shell: usermod -aG docker "{{ my_admin_user}}"
+
     # https://www.jeffgeerling.com/blog/2018/cloning-private-github-repositories-ansible-on-remote-server-through-ssh
     - name: "Clone Git Repo"
       git:
         dest: "{{ my_git_home }}"
         repo: "{{ my_github_repo }}"
         clone: "yes"
-        update: "yes"
+        update: "no"
         accept_hostkey: "yes"
         force: "yes"
 
