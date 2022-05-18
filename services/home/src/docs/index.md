@@ -1,10 +1,10 @@
 ---
-title: OGC-API-Testbed - STABLE
+title: NGDI-20-60 OGC API Testbed
 ---
 
-# OGC-API-Testbed - STABLE - Home
+# NGDI-20-60 OGC API Testbed
 
-Landing page for this server instance. 
+Landing page for this server instance, which is a fork of the Geonovum OGC-API-Testbed suite.    
 Main website and documentation: [apitestdocs.geonovum.nl](https://apitestdocs.geonovum.nl).
  
 Below the (web-) services running on this domain. Click links to view and interact.
@@ -51,3 +51,6 @@ These are services for administration and maintenance.
 # Questions?
 
 [![Gitter](https://img.shields.io/gitter/room/Geonovum/ogc-api-testbed.svg?style=flat-square)](https://gitter.im/Geonovum/ogc-api-testbed)
+
+# Contact
+[mediamaps](https://heig-vd.ch/rad/instituts/mei/mediamaps)

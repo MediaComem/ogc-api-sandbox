@@ -8,7 +8,7 @@
 export DEPLOY_ENV="local"
 export TRAEFIK_DOMAIN="localhost"
 export TRAEFIK_SSL_ENDPOINT=
-export TRAEFIK_SSL_DOMAIN="apitestbed.geonovum.nl"
+export TRAEFIK_SSL_DOMAIN="`hostname -f`"
 export TRAEFIK_SSL_CERT_RESOLVER=
 export TRAEFIK_USE_TLS="false"
 export HOST_UID=$(id -u)
@@ -17,10 +17,13 @@ export HOST_UID_GID="${HOST_UID}:${HOST_GID}"
 
 # Set host-dependent vars
 case "${HOSTNAME}" in
+    "ogc")
+        DEPLOY_ENV="prod"
+        ;;
     "OGCAPIP")
         DEPLOY_ENV="prod"
         ;;
-    "apitestbed.geonovum.nl")
+    "`hostname -f`")
         DEPLOY_ENV="prod"
         ;;
     "apitestbed")

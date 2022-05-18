@@ -56,7 +56,7 @@ services:
       - /run-runner.sh
 
   ghc_db:
-    image: postgis/postgis:13-3.1-alpine
+    image: postgis/postgis:14-3.2-alpine
     container_name: ghc_db
 
     volumes:
@@ -87,7 +87,7 @@ services:
       - "9001:9000"
 
     command:
-      - --admin-password=$$2y$$05$$VCjhk4z8mhi8V0DpXHX56.W1jy0sNWHOwSQbXVCYPyLs/WanBODPq
+      - --admin-password=${PORTAINER_ADMIN_PASSWORD}
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

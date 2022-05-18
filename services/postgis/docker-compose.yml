@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   postgis:
-    image: postgis/postgis:13-3.1-alpine
+    image: postgis/postgis:14-3.2-alpine
 
     container_name: postgis
 
@@ -29,7 +29,7 @@ services:
 
   pgadmin:
 
-    image: dpage/pgadmin4:5.4
+    image: dpage/pgadmin4:6.8
 
     container_name: pgadmin
 
