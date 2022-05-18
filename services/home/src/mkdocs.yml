@@ -1,4 +1,4 @@
-site_name: Geonovum OGC API Testbed
+site_name: NGDI-20-60 OGC API Testbed
 nav:
     - Home: index.md
-    - Code: https://github.com/Geonovum/ogc-api-testbed
+    - Code: https://github.com/MediaComem/ogc-api-sandbox/
