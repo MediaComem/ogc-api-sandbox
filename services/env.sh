@@ -23,7 +23,7 @@ case "${HOSTNAME}" in
     "OGCAPIP")
         DEPLOY_ENV="prod"
         ;;
-    "apitestbed.geonovum.nl")
+    "`hostname -f`")
         DEPLOY_ENV="prod"
         ;;
     "apitestbed")
