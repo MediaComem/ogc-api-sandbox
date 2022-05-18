@@ -1,5 +1,5 @@
 # Inspired from https://github.com/5car1z/ansible-debian-provisioning
-- name: "ogcapi Ubuntu Server Setup"
+- name: "NGDI-20-60 OGC API Ubuntu Server Setup"
   hosts: all
   become: true
   gather_facts: yes
