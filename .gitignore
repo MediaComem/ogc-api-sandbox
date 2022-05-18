@@ -37,3 +37,4 @@ services/postgis/pgadmin.env
 .env
 ansible/hosts/prod.yml
 ansible/setenv.yml
+services/ldproxy/data/proj/
