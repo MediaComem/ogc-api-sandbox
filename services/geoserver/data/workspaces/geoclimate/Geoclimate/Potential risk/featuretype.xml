@@ -1,0 +1,59 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-67a24c25:181ec0937d2:-7fc6</id>
+  <name>Potential risk</name>
+  <nativeName>tot_floor_area_rsu_lcz</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-54b90bf7:181b48718fd:-7ffb</id>
+  </namespace>
+  <title>Potential risk</title>
+  <abstract>Potential risk computed from the GeoClimate solution</abstract>
+  <keywords>
+    <string>Climate Change</string>
+    <string>Urban heat island</string>
+    <string>Geoclimate</string>
+    <string>OSM</string>
+  </keywords>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>6.608680248260498</minx>
+    <maxx>6.666203022003174</maxx>
+    <miny>46.74735641479492</miny>
+    <maxy>46.79538345336914</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>6.608680248260498</minx>
+    <maxx>6.666203022003174</maxx>
+    <miny>46.74735641479492</miny>
+    <maxy>46.79538345336914</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-67a24c25:181ec0937d2:-7fcf</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

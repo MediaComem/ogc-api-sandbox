@@ -1,0 +1,59 @@
+/* Metadata
+* @title Building urban typology
+* @abstract Building urban typology
+*/
+
+/* Main rule*/
+
+* [@sd < 0.5M]{
+  stroke: #000000;
+  stroke-width: 0.26;
+  stroke-linejoin:bevel;
+
+/* Styling according to the building urban typology */  
+
+  /* @title Industrial building */
+  [i_typo = 'ba'] {
+    fill: #8f8f8f;
+  };
+  /* @title High-rise building */
+  [i_typo = 'bgh'] {
+    fill: #000d00;
+  };
+  /* @title Block of buildings on closed urban islet */
+  [i_typo = 'icif'] {
+    fill: #d52623;
+  };
+  /* @title Block of buildings on open urban islet*/
+  [i_typo = 'icio'] {
+    fill: #f07923;
+  };
+  /* @title Detached building*/
+  [i_typo = 'id'] {
+    fill: #eccb27;
+  };
+  /* @title Informal building*/
+  [i_typo = 'local'] {
+    fill: #d728ac;
+  };
+  /* @title Residential on closed islet*/
+  [i_typo = 'pcif'] {
+    fill: #2b6724;
+  };
+  /* @title Residential on open islet*/
+  [i_typo = 'pcio'] {
+    fill: #36884a;
+  };
+  /* @title Detached house*/
+  [i_typo = 'pd'] {
+    fill: #22be2f;
+  };
+  /* @title Semi-detached house*/
+  [i_typo = 'psc'] {
+    fill: #05ff58;
+  };
+  /* @title Undefined*/
+  [i_typo = ''] {
+    fill: #ffffff;
+  };
+}

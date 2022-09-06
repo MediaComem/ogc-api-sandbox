@@ -1,0 +1,21 @@
+<layer>
+  <name>Building urban typology</name>
+  <id>LayerInfoImpl-67a24c25:181ec0937d2:-7fcd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7fe6</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7fe6</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-67a24c25:181ec0937d2:-7fce</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-25 15:03:25.92 UTC</dateCreated>
+</layer>

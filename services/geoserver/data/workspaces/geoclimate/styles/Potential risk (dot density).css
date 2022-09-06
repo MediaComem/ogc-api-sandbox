@@ -1,0 +1,45 @@
+/* Metadata
+* @title Potential risk (dot density)
+* @abstract Potential risk (dot density)
+*/
+
+* {
+  fill: symbol("circle");
+  stroke-width: 0.26;
+  fill-random: grid;
+  fill-random-tile-size: 100;
+  n:[round(area(wkb_geometry)/10000)];
+  fill-random-symbol-count: n;
+  :fill {
+    size: 2;
+  };
+  /* @title high  */
+  [lcz_primary <= 4], 
+  [lcz_primary = 8], 
+  [lcz_primary = 10],
+  [lcz_primary = 105] {
+    stroke:#a1251b;
+    :fill{ 
+      fill: #a1251b;
+    }
+  };
+  /* @title mid */
+  [lcz_primary >= 5] 
+  [lcz_primary <= 7], 
+  [lcz_primary = 9], 
+  [lcz_primary = 10] {
+    stroke: #ffa500;
+    :fill{
+    fill:#ffa500;
+    }
+  };
+  /* @title low */
+  [lcz_primary >= 101] 
+  [lcz_primary <= 104], 
+  [lcz_primary = 107]{
+	stroke:#0080ff; 
+    :fill{ 
+    fill: #0080ff; 
+    }
+  }
+}
