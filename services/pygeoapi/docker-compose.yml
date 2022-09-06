@@ -23,7 +23,7 @@ services:
       # Map data and config into pygeoapi container
       - ./local.config.yml:/pygeoapi/local.config.yml
       - ./data:/pygeoapi/data
-
+      
     labels:
       # Enable Traefik routing on overlay service network
       - "traefik.enable=true"
