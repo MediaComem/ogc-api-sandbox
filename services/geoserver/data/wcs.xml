@@ -1,9 +1,9 @@
 <wcs>
   <id>wcs</id>
   <enabled>true</enabled>
-  <name>GeoServer OGC API Experiment GeoNovum WCS</name>
-  <title>GeoServer OGC API Experiment GeoNovum Web Coverage Service</title>
-  <maintainer>https://www.geonovum.nl/</maintainer>
+  <name>NGDI-20-60 OGC API Testbed Geoserver WCS</name>
+  <title>NGDI-20-60 OGC API Testbed Geoserver Web Coverage Service</title>
+  <maintainer>https://heig-vd.ch/rad/instituts/mei/mediamaps</maintainer>
   <abstrct>Web Coverage Service providing raster and imagery data access. Direct raw data is provided as a grid coverage, where measurements are represent information from digital imagery, elevation data, or other models.</abstrct>
   <accessConstraints>NONE</accessConstraints>
   <fees>NONE</fees>
@@ -24,11 +24,11 @@
   </keywords>
   <metadataLink>
     <type>undef</type>
-    <about>https://www.geonovum.nl/geoserver/</about>
+    <about>https://ogc.heig-vd.ch/geoserver/web</about>
     <metadataType>other</metadataType>
   </metadataLink>
   <citeCompliant>false</citeCompliant>
-  <onlineResource>https://www.geonovum.nl/geoserver/</onlineResource>
+  <onlineResource>https://ogc.heig-vd.ch/geoserver/web</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>
   <gmlPrefixing>false</gmlPrefixing>

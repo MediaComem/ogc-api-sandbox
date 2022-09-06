@@ -2,12 +2,20 @@
   <settings>
     <id>SettingsInfoImpl-14e8eba4:171a545ba94:-8000</id>
     <contact>
-      <contactOrganization>GeoNovum</contactOrganization>
+      <address>HEIG-VD Centre St-Roch Avenue des Sports 20</address>
+      <addressCity>Yverdon-les-Bain</addressCity>
+      <addressCountry>Switzerland</addressCountry>
+      <addressPostalCode>1401</addressPostalCode>
+      <addressState>Vaud</addressState>
+      <contactEmail>maxime.collombin@heig-vd.ch</contactEmail>
+      <contactOrganization>Mediamaps</contactOrganization>
+      <contactPerson>Mediamaps</contactPerson>
+      <contactVoice>+41 (0)24 557 76 04</contactVoice>
     </contact>
     <charset>UTF-8</charset>
     <numDecimals>8</numDecimals>
     <onlineResource>http://geonovum.nl</onlineResource>
-    <proxyBaseUrl>https://apitestbed.geonovum.nl/geoserver</proxyBaseUrl>
+    <proxyBaseUrl>https://ogc.heig-vd.ch/geoserver</proxyBaseUrl>
     <verbose>true</verbose>
     <verboseExceptions>false</verboseExceptions>
     <metadata>
@@ -68,7 +76,7 @@
     <queueType>UNBOUNDED</queueType>
     <imageIOCacheThreshold>10240</imageIOCacheThreshold>
   </coverageAccess>
-  <updateSequence>130</updateSequence>
+  <updateSequence>1066</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <useHeadersProxyURL>true</useHeadersProxyURL>

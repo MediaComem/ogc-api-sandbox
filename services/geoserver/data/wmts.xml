@@ -1,9 +1,9 @@
 <wmts>
   <id>wmts</id>
   <enabled>true</enabled>
-  <name>GeoServer OGC API Experiment GeoNovum WMTS</name>
-  <title>GeoServer OGC API Experiment GeoNovum Web Map Tile Service</title>
-  <maintainer>http://geoserver.org/com</maintainer>
+  <name>NGDI-20-60 OGC API Testbed Geoserver WMTS</name>
+  <title>NGDI-20-60 OGC API Testbed Geoserver Web Map Tile Service</title>
+  <maintainer>https://heig-vd.ch/rad/instituts/mei/mediamaps</maintainer>
   <abstrct>Web Map Tile Service (WMTS) publishing TileSets. Contents are published as TileSets for use by mobile and web clients.</abstrct>
   <accessConstraints>NONE</accessConstraints>
   <fees>NONE</fees>
@@ -17,7 +17,7 @@
     <string>GeoServer</string>
   </keywords>
   <citeCompliant>false</citeCompliant>
-  <onlineResource>https://www.geonovum.nl/geoserver/</onlineResource>
+  <onlineResource>https://ogc.heig-vd.ch/geoserver/web</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>
 </wmts>

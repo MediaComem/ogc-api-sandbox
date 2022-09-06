@@ -1,9 +1,9 @@
 <csw>
   <id>csw</id>
   <enabled>true</enabled>
-  <name>GeoServer OGC API Experiment GeoNovum CSW</name>
-  <title>GeoServer OGC API Experiment GeoNovum Catalogue Service</title>
-  <maintainer>https://www.geonovum.nl/</maintainer>
+  <name>NGDI-20-60 OGC API Testbed Geoserver CSW</name>
+  <title>NGDI-20-60 OGC API Testbed Geoserver Catalogue Service</title>
+  <maintainer>https://heig-vd.ch/rad/instituts/mei/mediamaps</maintainer>
   <abstrct>Catalogue Services (CSW) describing server contents as records.</abstrct>
   <accessConstraints>NONE</accessConstraints>
   <fees>NONE</fees>
@@ -17,7 +17,7 @@
     <string>GeoServer</string>
   </keywords>
   <citeCompliant>false</citeCompliant>
-  <onlineResource>https://www.geonovum.nl/geoserver/</onlineResource>
+  <onlineResource>https://ogc.heig-vd.ch/geoserver/web</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>  
 </csw>
