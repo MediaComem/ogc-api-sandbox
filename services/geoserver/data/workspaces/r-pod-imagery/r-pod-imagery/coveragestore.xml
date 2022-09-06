@@ -1,0 +1,14 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-26e48618:181d2c876f5:-7fe6</id>
+  <name>r-pod-imagery</name>
+  <description>r-pod-imagery</description>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-26e48618:181d2c876f5:-7fee</id>
+  </workspace>
+  <__default>false</__default>
+  <dateCreated>2022-07-07 09:27:25.589 UTC</dateCreated>
+  <dateModified>2022-07-07 11:34:43.883 UTC</dateModified>
+  <url>file:data/r-pod/131031_Yverdon_Heig_10cm.tif</url>
+</coverageStore>
