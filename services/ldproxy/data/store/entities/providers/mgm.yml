@@ -1,0 +1,177 @@
+---
+id: mgm
+createdAt: 1658753432600
+lastModified: 1658753432600
+entityStorageVersion: 2
+providerType: FEATURE
+featureProviderType: SQL
+nativeCrs:
+  code: 4326
+  forceAxisOrder: LON_LAT
+connectionInfo:
+  database: mgm
+  host: postgis
+  user: postgres
+  password: cG9zdGdyZXM=
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  ffp_foret_protectrice_ge:
+    sourcePath: /ffp_foret_protectrice_ge
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+      fid:
+        sourcePath: fid
+        type: FLOAT
+      id:
+        sourcePath: id
+        type: FLOAT
+      Erosion:
+        sourcePath: erosion
+        type: FLOAT
+      Landslide:
+        sourcePath: glissement
+        type: FLOAT
+      Rock falls:
+        sourcePath: chutes_pierres
+        type: FLOAT
+      Local name:
+        sourcePath: nom_local
+        type: STRING
+      Potential hazard:
+        sourcePath: danger_potentiel
+        type: STRING
+      Damage:
+        sourcePath: dommage
+        type: STRING
+      Surface area:
+        sourcePath: shape_area
+        type: FLOAT
+      Perimeter:
+        sourcePath: shape_len
+        type: FLOAT
+  gewr:
+    sourcePath: /gewr
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+      t_id:
+        sourcePath: t_id
+        type: FLOAT
+      t_basket:
+        sourcePath: t_basket
+        type: FLOAT
+      t_ili_tid:
+        sourcePath: t_ili_tid
+        type: STRING
+      Kanton:
+        sourcePath: kanton
+        type: FLOAT
+      Object number:
+        sourcePath: objektnummer
+        type: STRING
+      Name:
+        sourcePath: gewaessername
+        type: STRING
+      Effective date:
+        sourcePath: rechtskraftdatum
+        type: DATETIME
+        role: PRIMARY_INSTANT
+      Renunciation:
+        sourcePath: verzicht
+        type: BOOLEAN
+  kataster_belasteter_standorte_zivilflugplaetze_standort:
+    sourcePath: /kataster_belasteter_standorte_zivilflugplaetze_standort
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      fid:
+        sourcePath: fid
+        type: FLOAT
+      id:
+        sourcePath: id
+        type: FLOAT
+      t_id:
+        sourcePath: t_id
+        type: FLOAT
+      t_basket:
+        sourcePath: t_basket
+        type: FLOAT
+      t_ili_tid:
+        sourcePath: t_ili_tid
+        type: STRING
+      Cadastral number:
+        sourcePath: katasternummer
+        type: STRING
+      URL (Location):
+        sourcePath: url_standort
+        type: STRING
+      Site type:
+        sourcePath: standorttyp
+        type: FLOAT
+      In use:
+        sourcePath: inbetrieb
+        type: BOOLEAN
+      Aftercare:
+        sourcePath: nachsorge
+        type: BOOLEAN
+      Status:
+        sourcePath: statusaltlv
+        type: FLOAT
+      First entry:
+        sourcePath: ersteintrag
+        type: DATETIME
+        role: PRIMARY_INSTANT
+      Last adaptation:
+        sourcePath: letzteanpassung
+        type: DATETIME
+      URL (Cadastre of polluted sites):
+        sourcePath: url_kbs_auszug
+        type: STRING
+      Remark:
+        sourcePath: bemerkung
+        type: STRING
+      Remark (DE):
+        sourcePath: bemerkung_de
+        type: STRING
+      Remark (FR):
+        sourcePath: bemerkung_fr
+        type: STRING
+      Remark (RM):
+        sourcePath: bemerkung_rm
+        type: STRING
+      Remark (IT):
+        sourcePath: bemerkung_it
+        type: STRING
+      Remark (EN):
+        sourcePath: bemerkung_en
+        type: STRING
+      Cadastre of responsibilities:
+        sourcePath: zustaendigkeitkataster
+        type: FLOAT

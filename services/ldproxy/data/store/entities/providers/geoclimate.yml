@@ -1,0 +1,118 @@
+---
+id: geoclimate
+createdAt: 1657638825429
+lastModified: 1657638825429
+entityStorageVersion: 2
+providerType: FEATURE
+featureProviderType: SQL
+nativeCrs:
+  code: 4326
+  forceAxisOrder: LON_LAT
+connectionInfo:
+  database: geoclimate
+  host: postgis
+  user: postgres
+  password: cG9zdGdyZXM=
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  building_urban_typo:
+    sourcePath: /building_urban_typo
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+      fid:
+        sourcePath: fid
+        type: FLOAT
+      Building ID:
+        sourcePath: id_build
+        type: FLOAT
+      RSU ID:
+        sourcePath: id_rsu
+        type: FLOAT
+      Building type:
+        sourcePath: i_typo
+        type: STRING
+  rsu_lcz:
+    sourcePath: /rsu_lcz
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+      fid:
+        sourcePath: fid
+        type: FLOAT
+      id:
+        sourcePath: id
+        type: FLOAT
+      LCZ Primary:
+        sourcePath: lcz_primary
+        type: FLOAT
+      LCZ Secondary:
+        sourcePath: lcz_secondary
+        type: FLOAT
+      Minimal distance:
+        sourcePath: min_distance
+        type: FLOAT
+      LCZ uniqueness value:
+        sourcePath: lcz_uniqueness_value
+        type: FLOAT
+      LCZ equality value:
+        sourcePath: lcz_equality_value
+        type: FLOAT
+      Definition:
+        sourcePath: definition
+        type: STRING
+  tot_floor_area_rsu_lcz:
+    sourcePath: /tot_floor_area_rsu_lcz
+    type: OBJECT
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+      Geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+      RSU ID:
+        sourcePath: id_rsu
+        type: FLOAT
+      LCZ primary:
+        sourcePath: lcz_primary
+        type: FLOAT
+      LCZ secondary:
+        sourcePath: lcz_secondary
+        type: STRING
+      Minimal distance:
+        sourcePath: min_distance
+        type: FLOAT
+      LCZ uniqueness value:
+        sourcePath: lcz_uniqueness_value
+        type: STRING
+      LCZ equality value:
+        sourcePath: lcz_equality_value
+        type: STRING
+      Main use:
+        sourcePath: main_use
+        type: STRING
+      Total floor area:
+        sourcePath: tot_floor_area
+        type: FLOAT
