@@ -1,0 +1,22 @@
+/* Metadata
+* @title Protective forests in the canton of Geneva  
+* @abstract Style associated with the protective forests of the canton of Geneva according to the representation model
+*/
+
+/* Main rule*/
+
+[@sd <= 25k]{
+  fill: symbol("shape://slash");
+  :fill {
+      size: 5px;
+      stroke: #7800e0;
+      stroke-width: 2px;
+    };
+}
+
+[@sd > 25k][@sd <= 0.5M]{
+  fill: #7800e0;
+  stroke: #000000;
+  stroke-width: 1px;
+
+}

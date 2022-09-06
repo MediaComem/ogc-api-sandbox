@@ -1,0 +1,55 @@
+/* Metadata
+* @title Cadastre of polluted sites - civil aerodrome domain (CSP OFAC)
+* @abstract Cadastre of polluted sites - civil aerodrome domain (CSP OFAC)
+*/
+
+/* Main rule*/
+
+* {
+  mark: symbol(circle);
+  :mark {
+    size: 12;
+    stroke: black;
+    stroke-width: 1.5;
+    opacity: 0.75;
+  };
+    
+/* Styling according to the type of site */  
+  
+  /* @title Polluted, no harm or nuisance to be expected  */
+  
+  [statusaltlv = 1] {
+    :mark{fill: #FFFF00;}
+  };
+  
+  /* @title Polluted, investigation needed  */
+  
+  [statusaltlv = 2] {
+    :mark{fill: #0066FF;}
+  };
+      
+  /* @title Polluted, does not require monitoring or remediation  */
+  
+  [statusaltlv = 3] {
+    :mark{fill: #FFCC00;}
+  };
+  
+  /* @title Polluted, needs monitoring */
+  
+  [statusaltlv = 4] {
+    :mark{fill: #FF6600;}
+  };
+  
+  /* @title Polluted, needs remediation  */
+  
+  [statusaltlv = 5] {
+    :mark{fill: #FF0000;}
+  };
+  
+  /* @title Polluted, need for intervention not yet assessed  */
+  
+  [statusaltlv = 6] {
+    :mark{fill: #5F5F5F;}
+  };
+    
+ }

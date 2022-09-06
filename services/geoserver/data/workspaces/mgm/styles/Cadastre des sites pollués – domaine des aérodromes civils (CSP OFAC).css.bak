@@ -1,0 +1,55 @@
+/* Metadata
+* @title Cadastre des sites pollués – domaine des aérodromes civils (CSP OFAC)
+* @abstract Cadastre des sites pollués – domaine des aérodromes civils (CSP OFAC)
+*/
+
+/* Main rule*/
+
+* {
+  mark: symbol(circle);
+  :mark {
+    size: 12;
+    stroke: black;
+    stroke-width: 1.5;
+    opacity: 0.75;
+  };
+    
+/* Styling selon le type de site */  
+  
+  /* @title Pollué, pas d'atteinte nuisible ou incommodante à attendre  */
+  
+  [statusaltlv = 1] {
+    :mark{fill: #FFFF00;}
+  };
+  
+  /* @title Pollué, investigation nécessaire  */
+  
+  [statusaltlv = 2] {
+    :mark{fill: #0066FF;}
+  };
+      
+  /* @title Pollué, ne nécessite ni surveillance ni assainissement  */
+  
+  [statusaltlv = 3] {
+    :mark{fill: #FFCC00;}
+  };
+  
+  /* @title Pollué, nécessite une surveillance */
+  
+  [statusaltlv = 4] {
+    :mark{fill: #FF6600;}
+  };
+  
+  /* @title Pollué, nécessite un assainissement  */
+  
+  [statusaltlv = 5] {
+    :mark{fill: #FF0000;}
+  };
+  
+  /* @title Pollué, nécessité d'une intervention non encore évaluée  */
+  
+  [statusaltlv = 6] {
+    :mark{fill: #5F5F5F;}
+  };
+    
+ }
