@@ -1,0 +1,43 @@
+<dataStore>
+  <id>DataStoreInfoImpl-67a24c25:181ec0937d2:-7fe4</id>
+  <name>mgm</name>
+  <description>Minimal Geodata Models</description>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-54b90bf7:181b48718fd:-7ff2</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">public</entry>
+    <entry key="Evictor run periodicity">300</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">true</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="database">mgm</entry>
+    <entry key="host">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="SSL mode">DISABLE</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="create database">false</entry>
+    <entry key="Method used to simplify geometries">FAST</entry>
+    <entry key="port">5432</entry>
+    <entry key="passwd">crypt1:JZDcxzr9T2FcRxh8x7dcBOpjgaaD2Q1k</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="namespace">https://www.geo.admin.ch/fr/geoinformation-suisse/geodonnees-de-base/modeles-geodonnees.html#198_1583484076205</entry>
+    <entry key="max connections">10</entry>
+    <entry key="Evictor tests per run">3</entry>
+    <entry key="Test while idle">true</entry>
+    <entry key="user">postgres</entry>
+    <entry key="Max connection idle time">300</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-07-25 14:25:19.821 UTC</dateCreated>
+  <dateModified>2022-07-25 14:32:13.541 UTC</dateModified>
+</dataStore>

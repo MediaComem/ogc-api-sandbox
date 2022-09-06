@@ -1,0 +1,41 @@
+/* Metadata
+* @title Potential risk
+* @abstract Potential risk
+*/
+
+* {
+  mark: symbol(circle);
+  mark-size: [20.0*SQRT(tot_floor_area)/335.312283719383];
+}
+
+/* @title high */
+
+[lcz_primary <= 4],
+[lcz_primary = 8],
+[lcz_primary = 10],
+[lcz_primary = 105]{
+  :mark{
+    fill: #a1251b;
+  }
+}
+
+/* @title moderate */
+
+[lcz_primary >= 5]
+[lcz_primary <= 7],
+[lcz_primary = 9],
+[lcz_primary = 10]{
+  :mark{
+    fill: #ffa500;
+  }
+}
+
+/* @title low */
+
+[lcz_primary >= 101]
+[lcz_primary <= 104],
+[lcz_primary = 107]{
+  :mark{
+    fill: #0080ff;
+  }
+}

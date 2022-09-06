@@ -1,5 +1,5 @@
 service:
-  url: https://apitestbed.geonovum.nl/goaf
+  url: https://ogc.heig-vd.ch/goaf
 datasource:
   gpkg:
     file: data/data.gpkg

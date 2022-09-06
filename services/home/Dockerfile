@@ -1,8 +1,8 @@
 FROM python:3.8.10-slim-buster
 
-LABEL maintainer="Just van den Broecke <justb4@gmail.com>"
+LABEL maintainer="Maxime Collombin <maxime.collombin@heig-vd.ch>"
 
-RUN pip install mkdocs
+RUN pip install mkdocs mkdocs-material
 
 COPY ./src/ /docs/
 

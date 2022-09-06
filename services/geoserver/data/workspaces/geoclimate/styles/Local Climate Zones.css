@@ -1,0 +1,83 @@
+/* Metadata
+* @title Local Climate Zones I
+* @abstract Local Climate Zones I
+*/
+
+/* Main rule*/
+
+* [@sd < 0.5M]{
+  stroke: #000000;
+  stroke-width: 0.26;
+  stroke-linejoin:bevel;
+
+/* Styling according to the Local Climate Zones */
+
+  /* @title LCZ 1: Compact high-rise */
+  [lcz_primary = 1] {
+    fill: #8b0101;
+  };
+  /* @title LCZ 2: Compact mid-rise */
+  [lcz_primary = 2] {
+    fill: #cc0200;
+  };
+  /* @title LCZ 3: Compact low-rise */
+  [lcz_primary = 3] {
+    fill: #fc0001;
+  };
+  /* @title LCZ 4: Open high-rise */
+  [lcz_primary = 4] {
+    fill: #be4c03;
+  };
+  /* @title LCZ 5: Open mid-rise */
+  [lcz_primary = 5] {
+    fill: #ff6602;
+  };
+  /* @title LCZ 6: Open low-rise */
+  [lcz_primary = 6] {
+    fill: #ff9856;
+  };
+  /* @title LCZ 7: Lightweight low-rise */
+  [lcz_primary = 7] {
+    fill: #fbed08;
+  };
+  /* @title LCZ 8: Large low-rise */
+  [lcz_primary = 8] {
+    fill: #bcbcba;
+  };
+  /* @title LCZ 9: Sparsely built */
+  [lcz_primary = 9] {
+    fill: #ffcca7;
+  };
+  /* @title LCZ 10: Heavy industry */
+  [lcz_primary = 10] {
+    fill: #57555a;
+  };
+  /* @title LCZ A: Dense trees */
+  [lcz_primary = 101] {
+    fill: #006700;
+  };
+  /* @title LCZ B: Scattered trees */
+  [lcz_primary = 102] {
+    fill: #05aa05;
+  };
+  /* @title LCZ C: Bush,scrub */
+  [lcz_primary = 103] {
+    fill: #648423 ;
+  };
+  /* @title LCZ D: Low plants */
+  [lcz_primary = 104] {
+    fill: #bbdb7a;
+  };
+  /* @title LCZ E: Bare rock or paved */
+  [lcz_primary = 105] {
+    fill: #010101;
+  };
+  /* @title LCZ F: Bare soil or sand */
+  [lcz_primary = 106] {
+    fill: #fdf6ae;
+  };
+  /* @title LCZ G: Water */
+  [lcz_primary = 107] {
+    fill: #6d67fd;
+  };
+}

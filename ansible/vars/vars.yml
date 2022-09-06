@@ -1,0 +1,35 @@
+# EXAMPLE FILE - your encrypted vars.yml should cotnain the following vars
+---
+my_email: insit-dev@heig-vd.ch
+my_admin_user: ogcroot
+my_admin_home: "/home/{{ my_admin_user }}"
+my_ssh_pubkey_file: "{{ my_admin_home }}/.ssh/id_rsa.pub"
+my_git_home: "/opt/ogc-api-sandbox/"
+my_github_repo: https://github.com/MediaComem/ogc-api-sandbox.git
+var_dir: /var/ogcapi
+logs_dir: "{{ var_dir }}/log"
+services_home: "{{ my_git_home }}/services"
+platform_home: "{{ my_git_home }}/platform"
+#pip_install_packages:
+#  - name: docker
+timezone: Europe/Zurich
+#ufw_open_ports: ['22', '80', '443']
+etc_environment:
+  PG_HOST: postres
+  PG_DB: postgres
+  PG_USER: postgres
+  PG_PASSWORD: postgres
+  PGADMIN_EMAIL: postgres@ogc.heig-vd.ch
+  PGADMIN_PASSWORD: postgres
+  GHC_SQLALCHEMY_DATABASE_URI: postgresql://ghc:ghc@ghc_db:5432/ghc
+  GHC_ADMIN_USER_NAME: postgres_ghc
+  GHC_ADMIN_USER_PASSWORD: postgres_ghc
+  GHC_ADMIN_USER_EMAIL: postgres_ghc@ogc.heig-vd.ch
+  GHC_NOTIFICATIONS_EMAIL: the_user@the_user.com
+  GHC_SMTP_EMAIL: the_user@the_user.com
+  GHC_SMTP_SERVER: smtp.gmail.com
+  GHC_SMTP_PORT: 587
+  GHC_SMTP_TLS: True
+  GHC_SMTP_SSL: False
+  GHC_SMTP_USERNAME: the_user@the_user.com
+  GHC_SMTP_PASSWORD: the_pw

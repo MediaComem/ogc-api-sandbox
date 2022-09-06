@@ -1,0 +1,38 @@
+/* Main rule*/
+
+* {
+  stroke: #232323;
+  stroke-width: 1;
+  stroke-linejoin:bevel;
+
+
+/* Styling according to the parameter zonalstats */
+
+  
+  /* @title 1.33958e-05 - 4.47404e-05 */
+  
+  
+  [zonalstats>=0.0000133958][zonalstats<=0.0000447404]{fill: #fff5f0};
+  
+  
+  /* @title 4.47404e-05 - 5.39585e-05 */
+  
+  
+  [zonalstats>0.0000447404][zonalstats<=0.0000539585]{fill: #fcbea5};
+  
+  
+  /* @title 5.39585e-05 - 5.92042e-05 */
+  
+  [zonalstats>0.0000539585][zonalstats<=0.0000592042]{fill: #fb7050};
+  
+  
+  /* @title 5.92042e-05 - 6.53331e-05 */
+  
+  [zonalstats>0.0000592042][zonalstats<=0.0000653331]{fill: #d32020};
+  
+  
+  /* @title 6.53331e-05 - 9.6609e-05 */
+  
+  [zonalstats>0.0000653331][zonalstats<=0.000096609]{fill: #67000d};
+  
+}

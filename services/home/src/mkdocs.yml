@@ -1,4 +1,22 @@
-site_name: NGDI-20-60 OGC API Testbed
+site_name: NGDI-20-60 OGC API Testbed Platform
+site_description: "NGDI-20-60 OGC API Testbed Platform"
+site_author: HEIG-VD, SUPSI, UNIGE
+copyright: "&copy; 2022 HEIG-VD, SUPSI, UNIGE"
+site_url: https://ogc.heig-vd.ch
+repo_url: https://github.com/MediaComem/ogc-api-sandbox/
 nav:
     - Home: index.md
+    - Howtos: howtos.md
     - Code: https://github.com/MediaComem/ogc-api-sandbox/
+
+# use_directory_urls: true
+
+theme:
+  name: material
+  palette:
+      # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-scheme
+      # Default is indigo (blue)
+      primary: indigo
+
+plugins:
+    - search

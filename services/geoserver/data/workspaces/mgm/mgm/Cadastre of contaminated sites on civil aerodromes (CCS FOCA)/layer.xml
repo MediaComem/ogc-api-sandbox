@@ -1,0 +1,22 @@
+<layer>
+  <name>Cadastre of contaminated sites on civil aerodromes (CCS FOCA)</name>
+  <id>LayerInfoImpl-67a24c25:181ec0937d2:-7fd8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7fd1</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7fd1</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-67a24c25:181ec0937d2:-7fd9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-25 14:43:51.844 UTC</dateCreated>
+  <dateModified>2022-07-25 15:03:37.45 UTC</dateModified>
+</layer>

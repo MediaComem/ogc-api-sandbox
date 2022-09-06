@@ -1,153 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<gwcConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://geowebcache.org/schema/1.8.0"
-  xsi:schemaLocation="http://geowebcache.org/schema/1.8.0 http://geowebcache.org/schema/1.8.0/geowebcache.xsd">
-  <version>1.8.0</version>
+<gwcConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://geowebcache.org/schema/1.20.0 http://geowebcache.org/schema/1.20.0/geowebcache.xsd" xmlns="http://geowebcache.org/schema/1.20.0">
+  <version>1.20.0</version>
   <backendTimeout>120</backendTimeout>
-  <!--
-  <serviceInformation>
-    <title>GeoWebCache</title>
-    <description>GeoWebCache is an advanced tile cache for WMS servers. It supports a large variety of protocols and
-      formats, including WMS-C, WMTS, KML, Google Maps and Virtual Earth.</description>
-    <keywords>
-      <string>WFS</string>
-      <string>WMS</string>
-      <string>WMTS</string>
-      <string>GEOWEBCACHE</string>
-    </keywords>
-    <serviceProvider>
-      <providerName>John Smith inc.</providerName>
-      <providerSite>http://www.example.com/</providerSite>
-      <serviceContact>
-        <individualName>John Smith</individualName>
-        <positionName>Geospatial Expert</positionName>
-        <addressType>Work</addressType>
-        <addressStreet>1 Bumpy St.</addressStreet>
-        <addressCity>Hobart</addressCity>
-        <addressAdministrativeArea>TAS</addressAdministrativeArea>
-        <addressPostalCode>7005</addressPostalCode>
-        <addressCountry>Australia</addressCountry>
-        <phoneNumber>+61 3 0000 0000</phoneNumber>
-        <faxNumber>+61 3 0000 0001</faxNumber>
-        <addressEmail>john.smith@example.com</addressEmail>
-      </serviceContact>
-    </serviceProvider>
-    <fees>NONE</fees>
-    <accessConstraints>NONE</accessConstraints>
-  </serviceInformation>
-  -->
+  <blobStores/>
   <gridSets>
-    <!-- Grid Set Example, by default EPSG:900913 and EPSG:4326 are defined -->
-    <!--
     <gridSet>
-      <name>EPSG:2163</name>
+      <name>EPSG:2056</name>
+      <description>EPSG:2056 (CH1903+ / LV95) tile matrix set</description>
       <srs>
-        <number>2163</number>
+        <number>2056</number>
       </srs>
       <extent>
         <coords>
-          <double>-2495667.977678598</double>
-          <double>-2223677.196231552</double>
-          <double>3291070.6104286816</double>
-          <double>959189.3312465074</double>
+          <double>2485014.052451379</double>
+          <double>1074188.6943776933</double>
+          <double>2837016.9329778464</double>
+          <double>1299782.763494124</double>
         </coords>
       </extent>
-      <scaleDenominators>
-        <double>25000000</double>
-        <double>1000000</double>
-        <double>100000</double>
-        <double>25000</double>
-      </scaleDenominators>
-      <tileHeight>200</tileHeight>
-      <tileWidth>200</tileWidth>
+      <alignTopLeft>false</alignTopLeft>
+      <resolutions>
+        <double>881.226832486057</double>
+        <double>440.6134162430285</double>
+        <double>220.30670812151425</double>
+        <double>110.15335406075712</double>
+        <double>55.07667703037856</double>
+        <double>27.53833851518928</double>
+        <double>13.76916925759464</double>
+        <double>6.88458462879732</double>
+        <double>3.44229231439866</double>
+        <double>1.72114615719933</double>
+        <double>0.860573078599665</double>
+        <double>0.4302865392998325</double>
+        <double>0.2151432696499163</double>
+        <double>0.1075716348249581</double>
+        <double>0.0537858174124791</double>
+        <double>0.0268929087062395</double>
+        <double>0.0134464543531198</double>
+        <double>0.0067232271765599</double>
+        <double>0.0033616135882799</double>
+        <double>0.0016808067941399</double>
+        <double>8.4040339707E-4</double>
+        <double>4.20201698535E-4</double>
+      </resolutions>
+      <metersPerUnit>1.0</metersPerUnit>
+      <pixelSize>2.8E-4</pixelSize>
+      <scaleNames>
+        <string>EPSG:2056:0</string>
+        <string>EPSG:2056:1</string>
+        <string>EPSG:2056:2</string>
+        <string>EPSG:2056:3</string>
+        <string>EPSG:2056:4</string>
+        <string>EPSG:2056:5</string>
+        <string>EPSG:2056:6</string>
+        <string>EPSG:2056:7</string>
+        <string>EPSG:2056:8</string>
+        <string>EPSG:2056:9</string>
+        <string>EPSG:2056:10</string>
+        <string>EPSG:2056:11</string>
+        <string>EPSG:2056:12</string>
+        <string>EPSG:2056:13</string>
+        <string>EPSG:2056:14</string>
+        <string>EPSG:2056:15</string>
+        <string>EPSG:2056:16</string>
+        <string>EPSG:2056:17</string>
+        <string>EPSG:2056:18</string>
+        <string>EPSG:2056:19</string>
+        <string>EPSG:2056:20</string>
+        <string>EPSG:2056:21</string>
+      </scaleNames>
+      <tileHeight>256</tileHeight>
+      <tileWidth>256</tileWidth>
+      <yCoordinateFirst>false</yCoordinateFirst>
     </gridSet>
-    -->
+    <gridSet>
+      <name>EPSG:21781</name>
+      <description>EPSG:21781</description>
+      <srs>
+        <number>21781</number>
+      </srs>
+      <extent>
+        <coords>
+          <double>485014.05245137925</double>
+          <double>74188.69437769346</double>
+          <double>837016.9329778461</double>
+          <double>299782.76349412405</double>
+        </coords>
+      </extent>
+      <alignTopLeft>false</alignTopLeft>
+      <resolutions>
+        <double>881.226832486057</double>
+        <double>440.6134162430285</double>
+        <double>220.30670812151425</double>
+        <double>110.15335406075712</double>
+        <double>55.07667703037856</double>
+        <double>27.53833851518928</double>
+        <double>13.76916925759464</double>
+        <double>6.88458462879732</double>
+        <double>3.44229231439866</double>
+        <double>1.72114615719933</double>
+        <double>0.860573078599665</double>
+        <double>0.4302865392998325</double>
+        <double>0.2151432696499163</double>
+        <double>0.1075716348249581</double>
+        <double>0.0537858174124791</double>
+        <double>0.0268929087062395</double>
+        <double>0.0134464543531198</double>
+        <double>0.0067232271765599</double>
+        <double>0.0033616135882799</double>
+        <double>0.00168080679414</double>
+        <double>8.4040339707E-4</double>
+        <double>4.20201698535E-4</double>
+      </resolutions>
+      <metersPerUnit>1.0</metersPerUnit>
+      <pixelSize>2.8E-4</pixelSize>
+      <scaleNames>
+        <string>EPSG:21781:0</string>
+        <string>EPSG:21781:1</string>
+        <string>EPSG:21781:2</string>
+        <string>EPSG:21781:3</string>
+        <string>EPSG:21781:4</string>
+        <string>EPSG:21781:5</string>
+        <string>EPSG:21781:6</string>
+        <string>EPSG:21781:7</string>
+        <string>EPSG:21781:8</string>
+        <string>EPSG:21781:9</string>
+        <string>EPSG:21781:10</string>
+        <string>EPSG:21781:11</string>
+        <string>EPSG:21781:12</string>
+        <string>EPSG:21781:13</string>
+        <string>EPSG:21781:14</string>
+        <string>EPSG:21781:15</string>
+        <string>EPSG:21781:16</string>
+        <string>EPSG:21781:17</string>
+        <string>EPSG:21781:18</string>
+        <string>EPSG:21781:19</string>
+        <string>EPSG:21781:20</string>
+        <string>EPSG:21781:21</string>
+      </scaleNames>
+      <tileHeight>256</tileHeight>
+      <tileWidth>256</tileWidth>
+      <yCoordinateFirst>false</yCoordinateFirst>
+    </gridSet>
   </gridSets>
-
-  <layers>
-    <!--
-    <wmsLayer>
-      <name>topp:states</name>
-      <mimeFormats>
-        <string>image/gif</string>
-        <string>image/jpeg</string>
-        <string>image/png</string>
-        <string>image/png8</string>
-      </mimeFormats>
-      <gridSubsets>
-        <gridSubset>
-          <gridSetName>EPSG:2163</gridSetName>
-        </gridSubset>
-      </gridSubsets>
-      <parameterFilters>
-        <stringParameterFilter>
-          <key>STYLES</key>
-          <defaultValue>population</defaultValue>
-          <values>
-            <string>population</string>
-            <string>polygon</string>
-            <string>pophatch</string>
-          </values>
-        </stringParameterFilter>
-      </parameterFilters>
-      <wmsUrl>
-        <string>http://demo.opengeo.org/geoserver/topp/wms</string>
-      </wmsUrl>
-    </wmsLayer>
-
-    <wmsLayer>
-      <name>raster test layer</name>
-      <mimeFormats>
-        <string>image/gif</string>
-        <string>image/jpeg</string>
-        <string>image/png</string>
-        <string>image/png8</string>
-      </mimeFormats>
-      <wmsUrl>
-        <string>http://demo.opengeo.org/geoserver/wms</string>
-      </wmsUrl>
-      <wmsLayers>nurc:Img_Sample</wmsLayers>
-    </wmsLayer>
-
-    <wmsLayer>
-      <name>img states</name>
-      <metaInformation>
-        <title>Nicer title for Image States</title>
-        <description>This is a description. Fascinating.</description>
-      </metaInformation>
-      <mimeFormats>
-        <string>image/gif</string>
-        <string>image/jpeg</string>
-        <string>image/png</string>
-        <string>image/png8</string>
-      </mimeFormats>
-      <gridSubsets>
-        <gridSubset>
-          <gridSetName>EPSG:4326</gridSetName>
-          <extent>
-            <coords>
-              <double>-129.6</double>
-              <double>3.45</double>
-              <double>-62.1</double>
-              <double>70.9</double>
-            </coords>
-          </extent>
-        </gridSubset>
-      </gridSubsets>
-      <expireCacheList>
-        <expirationRule minZoom="0" expiration="60" />
-      </expireCacheList>
-      <expireClientsList>
-        <expirationRule minZoom="0" expiration="500" />
-      </expireClientsList>
-      <wmsUrl>
-        <string>http://demo.opengeo.org/geoserver/wms</string>
-      </wmsUrl>
-      <wmsLayers>nurc:Img_Sample,topp:states</wmsLayers>
-      <transparent>false</transparent>
-      <bgColor>0x0066FF</bgColor>
-    </wmsLayer>
-    -->
-  </layers>
-  
+  <layers/>
 </gwcConfiguration>

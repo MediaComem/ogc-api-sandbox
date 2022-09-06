@@ -1,0 +1,157 @@
+<coverage>
+  <id>CoverageInfoImpl-26e48618:181d2c876f5:-7fe5</id>
+  <name>Aerial view of the HEIG campus (31/03/2013)</name>
+  <nativeName>131031_Yverdon_Heig_10cm</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-26e48618:181d2c876f5:-7fed</id>
+  </namespace>
+  <title>131031_Yverdon_Heig_10cmAerial view of the HEIG campus (31/03/2013)</title>
+  <description>Generated from GeoTIFF</description>
+  <abstract>Aerial view of the HEIG campus (31/03/2013)</abstract>
+  <keywords>
+    <string>WCS</string>
+    <string>GeoTIFF</string>
+    <string>R-Pod</string>
+    <string>Drone</string>
+    <string>Aerial imagery</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;CH1903 / LV03&quot;, 
+  GEOGCS[&quot;CH1903&quot;, 
+    DATUM[&quot;CH1903&quot;, 
+      SPHEROID[&quot;Bessel 1841&quot;, 6377397.155, 299.1528128, AUTHORITY[&quot;EPSG&quot;,&quot;7004&quot;]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6149&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4149&quot;]], 
+  PROJECTION[&quot;Oblique_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9815&quot;]], 
+  PARAMETER[&quot;longitude_of_center&quot;, 7.439583333333333], 
+  PARAMETER[&quot;latitude_of_center&quot;, 46.952405555555565], 
+  PARAMETER[&quot;azimuth&quot;, 90.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;false_easting&quot;, 600000.0], 
+  PARAMETER[&quot;false_northing&quot;, 200000.0], 
+  PARAMETER[&quot;rectified_grid_angle&quot;, 90.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;21781&quot;]]</nativeCRS>
+  <srs>EPSG:21781</srs>
+  <nativeBoundingBox>
+    <minx>540298.0954</minx>
+    <maxx>540692.4954</maxx>
+    <miny>181025.8449</miny>
+    <maxy>181360.6449</maxy>
+    <crs class="projected">EPSG:21781</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>6.656850991150367</minx>
+    <maxx>6.662058712287046</maxx>
+    <miny>46.77772085625814</miny>
+    <maxy>46.78076766824148</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="dirName">r-pod-imagery_131031_Yverdon_Heig_10cm</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl-26e48618:181d2c876f5:-7fe6</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <nativeFormat>GeoTIFF</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>3944 3348</high>
+    </range>
+    <transform>
+      <scaleX>0.1000000000000059</scaleX>
+      <scaleY>-0.10000000000000521</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>540298.1454</translateX>
+      <translateY>181360.59490000003</translateY>
+    </transform>
+    <crs>EPSG:21781</crs>
+  </grid>
+  <supportedFormats>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <requestSRS>
+    <string>EPSG:21781</string>
+  </requestSRS>
+  <responseSRS>
+    <string>EPSG:21781</string>
+  </responseSRS>
+  <parameters>
+    <entry>
+      <string>InputTransparentColor</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>RescalePixels</string>
+      <boolean>true</boolean>
+    </entry>
+  </parameters>
+  <nativeCoverageName>131031_Yverdon_Heig_10cm</nativeCoverageName>
+</coverage>

@@ -16,9 +16,9 @@ services:
 #     - "5000:80"
 
     environment:
-      - QGIS_SERVER_LOG_LEVEL:0
+      - QGIS_SERVER_LOG_LEVEL=1
       #- PGSERVICEFILE:If you want to change the default of /etc/qgisserver/pg_service.conf
-      - QGIS_PROJECT_FILE:/etc/qgisserver/project.qgs
+      - QGIS_PROJECT_FILE=/etc/qgisserver/project.qgs
       #- QGIS_SERVER_IGNORE_BAD_LAYERS:true
       #- MAX_REQUESTS_PER_PROCESS:The number of requests a QGIS server will serve before being restarted by apache
       #- QGIS_CATCH_SEGV:1
@@ -26,11 +26,16 @@ services:
     volumes:
       # Map data and config into  container
       - ./data:/etc/qgisserver
+      - ${HOME}/data:/etc/data
 
     labels:
       # Enable Traefik routing on overlay service network
       - "traefik.enable=true"
       - "traefik.docker.network=service-network"
+
+      # https bug fix (not working)
+      # - "traefik.entryPoints.web.address=:80"
+      # - "traefik.entrypoints.web.forwardedHeaders.insecure"
 
       # SSL/https router
       - "traefik.http.routers.${SERVICE_NAME}_https.rule=Host(`${TRAEFIK_SSL_DOMAIN}`) && PathPrefix(`${SERVICE_PATH}`)"

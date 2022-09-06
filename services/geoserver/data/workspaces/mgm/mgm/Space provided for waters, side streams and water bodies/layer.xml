@@ -1,0 +1,22 @@
+<layer>
+  <name>Space provided for waters, side streams and water bodies</name>
+  <id>LayerInfoImpl-67a24c25:181ec0937d2:-7fdb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-67a24c25:181ec0937d2:-7fd1</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-67a24c25:181ec0937d2:-7fd1</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-67a24c25:181ec0937d2:-7fdc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-25 14:39:16.753 UTC</dateCreated>
+  <dateModified>2022-07-25 15:03:53.126 UTC</dateModified>
+</layer>

@@ -1,0 +1,25 @@
+<layer>
+  <name>Potential risk</name>
+  <id>LayerInfoImpl-271df2b8:181d2998e28:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7ff6</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7ff6</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-70d985bf:181b4b6e6c6:-7ff1</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-271df2b8:181d2998e28:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-06 08:24:48.219 UTC</dateCreated>
+  <dateModified>2022-07-06 08:54:55.586 UTC</dateModified>
+</layer>

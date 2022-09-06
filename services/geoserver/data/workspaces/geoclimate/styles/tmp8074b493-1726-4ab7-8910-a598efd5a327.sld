@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
+  <sld:NamedLayer>
+    <sld:Name>Default Styler</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>Default Styler</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:Title>Potential risk, high, moderate</sld:Title>
+          <sld:Abstract>Potential risk</sld:Abstract>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+              <ogc:Literal>10</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+                <sld:Fill>
+                  <sld:CssParameter name="fill">#ffa500</sld:CssParameter>
+                </sld:Fill>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Div>
+                  <ogc:Mul>
+                    <ogc:Literal>20.0</ogc:Literal>
+                    <ogc:Function name="sqrt">
+                      <ogc:PropertyName>TOT_FLOOR_AREA</ogc:PropertyName>
+                    </ogc:Function>
+                  </ogc:Mul>
+                  <ogc:Literal>335.312283719383</ogc:Literal>
+                </ogc:Div>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Potential risk, high</sld:Title>
+          <sld:Abstract>Potential risk</sld:Abstract>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsLessThanOrEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsLessThanOrEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>8</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>105</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+                <sld:Fill>
+                  <sld:CssParameter name="fill">#a1251b</sld:CssParameter>
+                </sld:Fill>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Div>
+                  <ogc:Mul>
+                    <ogc:Literal>20.0</ogc:Literal>
+                    <ogc:Function name="sqrt">
+                      <ogc:PropertyName>TOT_FLOOR_AREA</ogc:PropertyName>
+                    </ogc:Function>
+                  </ogc:Mul>
+                  <ogc:Literal>335.312283719383</ogc:Literal>
+                </ogc:Div>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Potential risk, moderate</sld:Title>
+          <sld:Abstract>Potential risk</sld:Abstract>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsBetween>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:LowerBoundary>
+                  <ogc:Literal>5</ogc:Literal>
+                </ogc:LowerBoundary>
+                <ogc:UpperBoundary>
+                  <ogc:Literal>7</ogc:Literal>
+                </ogc:UpperBoundary>
+              </ogc:PropertyIsBetween>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>9</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+                <sld:Fill>
+                  <sld:CssParameter name="fill">#ffa500</sld:CssParameter>
+                </sld:Fill>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Div>
+                  <ogc:Mul>
+                    <ogc:Literal>20.0</ogc:Literal>
+                    <ogc:Function name="sqrt">
+                      <ogc:PropertyName>TOT_FLOOR_AREA</ogc:PropertyName>
+                    </ogc:Function>
+                  </ogc:Mul>
+                  <ogc:Literal>335.312283719383</ogc:Literal>
+                </ogc:Div>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Potential risk, low</sld:Title>
+          <sld:Abstract>Potential risk</sld:Abstract>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>5</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>7</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>
+              </ogc:Or>
+              <ogc:Or>
+                <ogc:PropertyIsBetween>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:LowerBoundary>
+                    <ogc:Literal>101</ogc:Literal>
+                  </ogc:LowerBoundary>
+                  <ogc:UpperBoundary>
+                    <ogc:Literal>104</ogc:Literal>
+                  </ogc:UpperBoundary>
+                </ogc:PropertyIsBetween>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>107</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+                <sld:Fill>
+                  <sld:CssParameter name="fill">#0080ff</sld:CssParameter>
+                </sld:Fill>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Div>
+                  <ogc:Mul>
+                    <ogc:Literal>20.0</ogc:Literal>
+                    <ogc:Function name="sqrt">
+                      <ogc:PropertyName>TOT_FLOOR_AREA</ogc:PropertyName>
+                    </ogc:Function>
+                  </ogc:Mul>
+                  <ogc:Literal>335.312283719383</ogc:Literal>
+                </ogc:Div>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Potential risk</sld:Title>
+          <sld:Abstract>Potential risk</sld:Abstract>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>5</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>7</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>
+              </ogc:Or>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>101</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                  <ogc:Literal>104</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>
+              </ogc:Or>
+              <ogc:PropertyIsGreaterThan>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsGreaterThan>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>8</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>9</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>10</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>105</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>LCZ_PRIMARY</ogc:PropertyName>
+                <ogc:Literal>107</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+                <sld:Fill/>
+                <sld:Stroke/>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Div>
+                  <ogc:Mul>
+                    <ogc:Literal>20.0</ogc:Literal>
+                    <ogc:Function name="sqrt">
+                      <ogc:PropertyName>TOT_FLOOR_AREA</ogc:PropertyName>
+                    </ogc:Function>
+                  </ogc:Mul>
+                  <ogc:Literal>335.312283719383</ogc:Literal>
+                </ogc:Div>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:VendorOption name="ruleEvaluation">first</sld:VendorOption>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>
+

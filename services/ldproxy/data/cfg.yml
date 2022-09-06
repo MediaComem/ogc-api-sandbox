@@ -1,6 +1,8 @@
 server:
-  externalUrl: https://apitestbed.geonovum.nl/ldproxy
+  externalUrl: https://ogc.heig-vd.ch/ldproxy
 logging:
-  level: DEBUG
+  level: 'OFF'
   appenders:
     - type: console
+  loggers:
+    de.ii: INFO

@@ -1,0 +1,17 @@
+<layer>
+  <name>Aerial view of the HEIG campus (31/03/2013)</name>
+  <id>LayerInfoImpl-26e48618:181d2c876f5:-7fe4</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-475b9c58:179af7c2936:-8000</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-26e48618:181d2c876f5:-7fe5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-07 14:28:20.636 UTC</dateCreated>
+  <dateModified>2022-07-07 14:31:42.388 UTC</dateModified>
+</layer>

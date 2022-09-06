@@ -1,0 +1,90 @@
+---
+id: mgm
+createdAt: 1658753433497
+lastModified: 1658753433497
+entityStorageVersion: 2
+serviceType: OGC_API
+label: Minimal Geodata Models
+description: |
+  The aim of the Geoinformation Act (GeoIA) is to enable the wider use of geoinformation in administration, business, society and science. In order to achieve this goal, geodata must be made available quickly, easily and at affordable costs, while at the same time satisfying the required quality level.
+  <br>
+  The Federal Law on Geoinformation (CH) obliges the federal offices and the cantons to harmonise the basic geodata in their areas of responsibility and to establish minimum geodata models and representations for these.
+metadata:
+  contactName: Mediamaps
+  # contactEmail: maxime.collombin@heig-vd.ch
+  creatorName: Mediamaps, HEIG-VD
+  creatorUrl: https://heig-vd.ch/rad/instituts/mei/mediamaps
+  publisherName: Mediamaps, HEIG-VD
+  publisherUrl: https://heig-vd.ch/rad/instituts/mei/mediamaps
+apiValidation: NONE
+api:
+- buildingBlock: COLLECTIONS
+  additionalLinks:
+  - rel: related
+    type: text/html 
+    title: 'Modèles de géodonnées (FR)'
+    href: 'https://www.geo.admin.ch/fr/geoinformation-suisse/geodonnees-de-base/modeles-geodonnees.html'
+    hreflang: fr
+- buildingBlock: CRS
+  enabled: true
+  additionalCrs:
+  - code: 2056
+    forceAxisOrder: NONE
+  - code: 3857
+    forceAxisOrder: NONE
+- buildingBlock: SCHEMA
+  enabled: true
+- buildingBlock: QUERYABLES
+  enabled: true
+- buildingBlock: FILTER
+  enabled: true
+- buildingBlock: SORTING
+  enabled: true
+- buildingBlock: PROJECTIONS
+  enabled: true
+# - buildingBlock: TILES
+#   enabled: true
+#   cache: MBTILES
+#   tileProvider:
+#     type: FEATURES
+#     multiCollectionEnabled: true
+#     zoomLevels:
+#       WebMercatorQuad:
+#         min: 5
+#         max: 21
+#     seeding:
+#       WebMercatorQuad:
+#         min: 5
+#         max: 21
+collections:
+  ffp_foret_protectrice_ge:
+    id: ffp_foret_protectrice_ge
+    label: Protective forests in the canton of Geneva
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
+  gewr:
+    id: gewr
+    label: Space provided for waters, side streams and water bodies
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
+        temporal:
+        - rechtskraftdatum
+  kataster_belasteter_standorte_zivilflugplaetze_standort:
+    id: kataster_belasteter_standorte_zivilflugplaetze_standort
+    label: Cadastre of contaminated sites on civil aerodromes (CCS FOCA)
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
+        temporal:
+        - ersteintrag

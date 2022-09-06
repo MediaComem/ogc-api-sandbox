@@ -1,0 +1,88 @@
+---
+id: geoclimate
+createdAt: 1657638826417
+lastModified: 1657638826417
+entityStorageVersion: 2
+serviceType: OGC_API
+label: Geoclimate
+description: |
+  GeoClimate is an opensource geospatial toolbox to compute a set of climate related parameters describing a territory (morphological indicators such as Sky View Factor, urban classifications such as Local Climate Zones, etc.).
+  <br>
+  GeoClimate uses vector-based inputs. Specific workflows have been developed to automatically use OpenStreetMap and the French BD Topo 2.2 version databases but the algorithms are data independent, thus allowing the user to connect any vector-based dataset.
+metadata:
+  contactName: Mediamaps
+  # contactEmail: maxime.collombin@heig-vd.ch
+  creatorName: Mediamaps, HEIG-VD
+  creatorUrl: https://heig-vd.ch/rad/instituts/mei/mediamaps
+  publisherName: Mediamaps, HEIG-VD
+  publisherUrl: https://heig-vd.ch/rad/instituts/mei/mediamaps
+apiValidation: NONE
+api:
+- buildingBlock: COLLECTIONS
+  additionalLinks:
+  - rel: related
+    type: text/html 
+    title: 'Geoclimate website'
+    href: 'https://github.com/orbisgis/geoclimate/'
+    hreflang: fr
+- buildingBlock: CRS
+  enabled: true
+  additionalCrs:
+  - code: 2056
+    forceAxisOrder: NONE
+  - code: 3857
+    forceAxisOrder: NONE
+- buildingBlock: SCHEMA
+  enabled: true
+- buildingBlock: QUERYABLES
+  enabled: true
+- buildingBlock: FILTER
+  enabled: true
+- buildingBlock: SORTING
+  enabled: true
+- buildingBlock: PROJECTIONS
+  enabled: true
+# - buildingBlock: TILES
+#   enabled: true
+#   cache: MBTILES
+#   tileProvider:
+#     type: FEATURES
+#     multiCollectionEnabled: true
+#     zoomLevels:
+#       WebMercatorQuad:
+#         min: 5
+#         max: 21
+#     seeding:
+#       WebMercatorQuad:
+#         min: 5
+#         max: 21
+collections:
+  building_urban_typo:
+    id: building_urban_typo
+    label: Building urban typology
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
+        temporal:
+        - date
+  rsu_lcz:
+    id: rsu_lcz
+    label: Local Climate Zones
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
+  tot_floor_area_rsu_lcz:
+    id: tot_floor_area_rsu_lcz
+    label: Potential risk (urban heat islands)
+    enabled: true
+    api:
+    - buildingBlock: FEATURES_CORE
+      queryables:
+        spatial:
+        - wkb_geometry
