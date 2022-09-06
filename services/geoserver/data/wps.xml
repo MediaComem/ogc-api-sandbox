@@ -1,9 +1,9 @@
 <wps>
   <id>wps</id>
   <enabled>true</enabled>
-  <name>GeoServer OGC API Experiment GeoNovum WPS</name>
-  <title>GeoServer OGC API Experiment GeoNovum Web Processing Service</title>
-  <maintainer>https://www.geonovum.nl/</maintainer>
+  <name>NGDI-20-60 OGC API Testbed Geoserver WPS</name>
+  <title>NGDI-20-60 OGC API Testbed Geoserver Web Processing Service</title>
+  <maintainer>https://heig-vd.ch/rad/instituts/mei/mediamaps</maintainer>
   <abstrct>Web Processing Service (WPS) describing available processes to execute on server contents.</abstrct>
   <versions>
     <org.geotools.util.Version>
@@ -11,7 +11,7 @@
     </org.geotools.util.Version>
   </versions>
   <citeCompliant>false</citeCompliant>
-  <onlineResource>https://www.geonovum.nl/geoserver/</onlineResource>
+  <onlineResource>https://ogc.heig-vd.ch/geoserver/web</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>
   <connectionTimeout>30.0</connectionTimeout>
