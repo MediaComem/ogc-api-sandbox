@@ -1,4 +1,4 @@
-# EXAMPLE FILE - your encrypted vars.yml should cotnain the following vars
+# EXAMPLE FILE - your encrypted vars.yml should contain the following vars
 ---
 my_ssh_pubkey_file: ~/.ssh/id_rsa.pub
 my_email: me@ergens.nl
