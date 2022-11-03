@@ -9,7 +9,7 @@ Main website and documentation are avalaible here: [apitestdocs.geonovum.nl](htt
  
 Below the (web-) services running on this domain. Click links to view and interact.
 
-> **_NOTE:_**  This is a work in progress and changes are expected to occur regularly.
+!!! note  This is a work in progress and changes are expected to occur regularly.
 
 ## OGC API Features
 
@@ -87,33 +87,6 @@ Open Source products running in this instance.
 | Endpoint | Author | Documentation |
 |--------|------|-------------|
 | [SensorThings API](https://geoservice2.ist.supsi.ch/indg/frost/v1.1) | [Fraunhofer IOSB](https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html) | [Link](https://fraunhoferiosb.github.io/FROST-Server/)|
-
-
-<!-- ## Storage Services
-
-The above services serve data from local files (e.g. GeoPackage) and these storage services:
-
-* "PostGIS" - access via <server-domain-name> port 5432 - spatial database based on PostgreSQL. 
-
-## Supporting Services
-
-These are services for administration and maintenance.
-
-| Endpoint | What | Author | Docs | HOWTO
-| --- | --- | --- | --- | --- 
-| [PGAdmin](/pgadmin) | Manage PostgreSQL Data | PGAdmin Community | [docs](https://www.pgadmin.org/) | [HOWTO](https://apitestdocs.geonovum.nl/howto/howto_pgadmin/)  
-| [Portainer](/portainer/) | Visual Docker Manager | [portainer.io](https://portainer.io) | [docs](https://documentation.portainer.io) | [HOWTO](https://apitestdocs.geonovum.nl/howto/howto_portainer/)  
-| [GeoHealthCheck](/ghc) | OGC Services Monitor | [GeoPython Community](https://geopython.github.io)  | [docs](https://geohealthcheck.org) | [HOWTO](https://apitestdocs.geonovum.nl/howto/howto_ghc/)  
-
-# Links
-
-* [Project GitHub Repo](https://github.com/Geonovum/ogc-api-testbed)
-* [apitestdocs.geonovum.nl](https://apitestdocs.geonovum.nl) - all documentation
-
-
-# Questions?
-
-[![Gitter](https://img.shields.io/gitter/room/Geonovum/ogc-api-testbed.svg?style=flat-square)](https://gitter.im/Geonovum/ogc-api-testbed) -->
 
 # Contact
 [mediamaps](https://heig-vd.ch/rad/instituts/mei/mediamaps)
