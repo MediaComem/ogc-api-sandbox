@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   geoserver:
-    
+
     image: ${DOCKER_IMAGE}
 
     container_name: ${SERVICE_NAME}
@@ -14,6 +14,7 @@ services:
 #    ports:
 #      - "8080:80"
 
+    restart: "unless-stopped"
 
     environment:
       # Use custom uid's, otherwise Tomcat uid from container is taken

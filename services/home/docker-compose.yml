@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   home:
-    
+
     build: ./
 
     container_name: home
@@ -13,6 +13,8 @@ services:
 
 #    ports:
 #     - "5000:8000"
+
+    restart: "unless-stopped"
 
     labels:
       # Enable Traefik routing on overlay service network

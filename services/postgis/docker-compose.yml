@@ -15,6 +15,8 @@ services:
       - ./pg_config/postgresql.conf:/etc/postgresql.conf
       - postgis_db:/var/lib/postgresql/data
 
+    restart: "unless-stopped"
+
     environment:
       # See also ansible/vars/vars.yml
       - POSTGRES_HOST=postgis
