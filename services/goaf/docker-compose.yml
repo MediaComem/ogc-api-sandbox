@@ -4,7 +4,7 @@ services:
 
   goaf:
     image: ${DOCKER_IMAGE}
- 
+
     container_name: ${SERVICE_NAME}
 
     expose:
@@ -12,12 +12,14 @@ services:
 
 #    ports:
 #      - "7080:7080"
-    
+
     volumes:
       - ./data:/data
-    
+
     environment:
-      - CONFIG=/data/data.yaml      
+      - CONFIG=/data/data.yaml
+
+    restart: "unless-stopped"
 
     labels:
       # Enable Traefik routing on overlay service network

@@ -34,7 +34,7 @@ server:
         output_dir: /tmp
 logging:
     level: ERROR
-    # logfile: ./pygeoapi.log
+    #logfile: /tmp/master.log
 
 metadata:
     identification:
@@ -155,19 +155,10 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: geoclimate
-                  user: postgres
-                  password: postgres
-                  search_path: [public,geoclimate]
+              name: SQLiteGPKG
+              data: data/geoclimate.gpkg
               id_field: id
               table: rsu_lcz
-              geom_field: wkb_geometry
-            #   source_srs: EPSG:4326
-            #   target_srs: EPSG:2056
     # Collection # 2 (building_urban_typo):
     building_urban_typo:
         type: collection
@@ -209,17 +200,10 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: geoclimate
-                  user: postgres
-                  password: postgres
-                  search_path: [public,geoclimate]
-              id_field: id_build
+              name: SQLiteGPKG
+              data: data/geoclimate.gpkg
+              id_field: ID_BUILD
               table: building_urban_typo
-              geom_field: wkb_geometry
     # Collection # 3 (tot_floor_area):
     tot_floor_area:
         type: collection
@@ -261,17 +245,10 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: geoclimate
-                  user: postgres
-                  password: postgres
-                  search_path: [public,geoclimate]
-              id_field: id_rsu
+              name: SQLiteGPKG
+              data: data/geoclimate.gpkg
+              id_field: ID_RSU
               table: tot_floor_area_rsu_lcz
-              geom_field: wkb_geometry
     # Collection # 4 (ere_espace_reserve_eaux):
     ere_espace_reserve_eaux:
         type: collection
@@ -379,17 +356,10 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: mgm
-                  user: postgres
-                  password: postgres
-                  search_path: [public,mgm]
+              name: SQLiteGPKG
+              data: data/mgm.gpkg
               id_field: id
               table: ffp_foret_protectrice_ge
-              geom_field: wkb_geometry
     # Collection # 6 (kataster-belasteter-standorte-zivilflugplaetze_standort):
     kataster-belasteter-standorte-zivilflugplaetze_standort:
         type: collection
@@ -474,281 +444,6 @@ resources:
               id_field: id
               table: kataster_belasteter_standorte_zivilflugplaetze_standort
               geom_field: wkb_geometry
-    # Collection # 7 (smapshot images location):
-    images_location:
-        type: collection
-        # visibility: hidden
-        lang: en-US
-        title: 
-            en: Smapshot images location
-        description: 
-            en: "Smapshot images location"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [5.95380253888395,45.78642612195471,10.540921750154311,47.79769051309189]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: smapshot
-                  user: postgres
-                  password: postgres
-                  search_path: [public]
-              id_field: id
-              table: images #images_location
-              geom_field: location
-              # List of fields to be exposed
-              properties: 
-                - id                  
-                - name
-                - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
-                - location
-                - collection_id       
-                - owner_id            
-                - user_id             
-                - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
-                - is_published
-                - exact_date
-                - date_shot_min       
-                - date_shot_max       
-                - original_id
-                - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
-                - correction_enabled
-                - observation_enabled 
-                - download_link       
-                - date_orig
-                - downloaded
-                - download_timestamp
-                - viewshed_created    
-                - geotag_created      
-                - geotag_timestamp
-                - viewshed_timestamp
-                - date_validated
-                - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
-                - country_iso_a2
-                - original_state      
-                - framing_mode        
-    # Collection # 8 (smapshot images viewshed simple):
-    images_viewshed_simple:
-        type: collection
-        # visibility: hidden
-        lang: en-US
-        title: 
-            en: Smapshot images viewshed simple
-        description: 
-            en: "Smapshot images viewshed simple"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [5.95380253888395,45.78642612195471,10.540921750154311,47.79769051309189]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: smapshot
-                  user: postgres
-                  password: postgres
-                  search_path: [public]
-              id_field: id
-              table: images #images_viewshed_simple
-              geom_field: viewshed_simple
-              # List of fields to be exposed
-              properties:
-                - id                  
-                - name
-                - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
-                - collection_id       
-                - owner_id            
-                - user_id             
-                - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
-                - is_published
-                - exact_date
-                - date_shot_min       
-                - date_shot_max       
-                - original_id
-                - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
-                - correction_enabled
-                - observation_enabled 
-                - download_link       
-                - date_orig
-                - downloaded
-                - download_timestamp
-                - viewshed_simple
-                - viewshed_created    
-                - geotag_created      
-                - geotag_timestamp
-                - viewshed_timestamp
-                - date_validated
-                - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
-                - country_iso_a2
-                - original_state      
-                - framing_mode
-    # Collection # 9 (smapshot images footprint):
-    images_footprint:
-        type: collection
-        # visibility: hidden
-        lang: en-US
-        title: 
-            en: Smapshot images footprint
-        description: 
-            en: "Smapshot images footprint"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [5.95380253888395,45.78642612195471,10.540921750154311,47.79769051309189]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: PostgreSQL
-              data:
-                  host: postgis
-                  port: 5432
-                  dbname: smapshot
-                  user: postgres
-                  password: postgres
-                  search_path: [public]
-              id_field: id
-              table: images #images_footprint
-              geom_field: footprint
-              # List of fields to be exposed
-              properties:
-                - id                  
-                - name
-                - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
-                - collection_id       
-                - owner_id            
-                - user_id             
-                - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
-                - is_published
-                - exact_date
-                - date_shot_min       
-                - date_shot_max       
-                - original_id
-                - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
-                - correction_enabled
-                - observation_enabled 
-                - download_link       
-                - date_orig
-                - downloaded
-                - download_timestamp
-                - geotag_created      
-                - geotag_timestamp
-                - viewshed_timestamp
-                - date_validated
-                - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
-                - country_iso_a2
-                - original_state      
-                - footprint
-                - framing_mode
     #  Records # 1: Metadata mgm (TinyDB provider)
     mgm_metadata:
         type: collection
@@ -776,7 +471,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [5.955901955143183,45.81795848130465,10.492171265453214,47.80845430298337]
+                bbox: [6.7705792505215,45.85818508987,8.47851865125237,46.6540471539603]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -788,176 +483,6 @@ resources:
               id_field: id
               time_field: editionDate
               title_field: title
-    #  Records # 2: Smapshot collections metadata
-    collections_metadata:
-        type: collection
-        title:
-            en: Smpashot Collections metadata
-            fr-CH: Métadonnées des collections de Smapshot
-        description:
-            en: "Smapshot Collections metadata"
-            fr-CH: "Métadonnées associées aux collections photgraphiquesde Smapshot"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: fr-CH
-        extents:
-            spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694] 
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
-        providers:
-            - type: record
-              name: TinyDBCatalogue
-              data: data/records/smapshot/collections-metadata.db
-              id_field: id
-              time_field: editionDate
-              title_field: title
-    #  Records # 3: Smapshot owners metadata
-    owners_metadata:
-        type: collection
-        title:
-            en: Smapshot Owners metadata
-            fr-CH: Métadonnées relatives aux propriétaires des collections de Smapshot
-        description:
-            en: "Smapshot Owners metadata"
-            fr-CH: "Métadonnées relatives aux propriétaires des collections de Smapshot"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: fr-CH
-        extents:
-            spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]                
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
-        providers:
-            - type: record
-              name: TinyDBCatalogue
-              data: data/records/smapshot/owners-metadata.db
-              id_field: id
-              time_field: editionDate
-              title_field: title
-    #  Records # 4: Smapshot photographers metadata
-    photographers_metadata:
-        type: collection
-        title:
-            en: Smapshot Photographers metadata
-            fr-CH: Métadonnées relatives aux photographes de Smapshot   
-        description:
-            en: "Smapshot Photographers metadata"
-            fr-CH: "Métadonnées relatives aux photographes de Smapshot"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing    
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: fr-CH
-        extents:
-            spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]              
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
-        providers:
-            - type: record
-              name: TinyDBCatalogue
-              data: data/records/smapshot/photographers-metadata.db
-              id_field: id
-              time_field: editionDate
-              title_field: title
-    #  Records # 5: Smapshot Company metadata
-    company_metadata:
-        type: collection
-        title:
-            en: Smapshot Company metadata
-            fr-CH: Métadonnées relatives aux compagnies de Smapshot
-        description:
-            en: "Smapshot Company metadata"
-            fr-CH: "Métadonnées relatives aux compagnies de Smapshot"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: fr-CH
-        extents:
-            spatial:
-                bbox: [-23.009072999999997,-43.30165000000002,24.25783648748297,55.68427723479694]                
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
-        providers:
-            - type: record
-              name: TinyDBCatalogue
-              data: data/records/smapshot/company-metadata.db
-              id_field: id
-              time_field: editionDate
-              title_field: title
-    #  Records # 6: Smapshot Geometadata
-    geometadata:
-        type: collection
-        title:
-            en: Smapshot Geometadata
-            fr-CH: Géométadonnées de Smapshot
-        description:
-            en: "Smapshot Geometadata"
-            fr-CH: "Géométadonnées de Smapshot"
-        keywords:
-            en:
-                - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing    
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://smapshot.heig-vd.ch/
-              hreflang: fr-CH
-        extents:
-            spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]                
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
-        providers:
-            - type: record
-              name: TinyDBCatalogue
-              data: data/records/smapshot/geometadata.db
-              id_field: id
-              time_field: editionDate
-              title_field: title              
     # Ressources UNIGE
     # ndvi
     ndvi:
@@ -1063,7 +588,7 @@ resources:
     #         - geneva
     #     extents:
     #         spatial:
-    #             bbox: [5.84, 45.66, 10.98, 48.87]
+    #             bbox: [5.955901955143183,45.81795848130465,10.492171265453214,47.80845430298337]
     #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
     #     links:
     #         - type: text/html

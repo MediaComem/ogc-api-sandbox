@@ -6,7 +6,8 @@ site_url: https://ogc.heig-vd.ch
 repo_url: https://github.com/MediaComem/ogc-api-sandbox/
 nav:
     - Home: index.md
-    - Howtos: howtos.md
+    - Howtos: 
+        - vector-data/vector-data.md
     - Code: https://github.com/MediaComem/ogc-api-sandbox/
 
 # use_directory_urls: true
@@ -20,3 +21,8 @@ theme:
 
 plugins:
     - search
+
+markdown_extensions:
+    - meta # option to add some meta tags on top, title, author, date, etc
+    - admonition # adds the note, question, tip boxes, eg: !!! tip "my tip"
+

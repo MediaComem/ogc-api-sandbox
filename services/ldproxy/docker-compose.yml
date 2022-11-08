@@ -13,10 +13,12 @@ services:
 
 #    ports:
 #      - "7080:7080"
-    
+
+    restart: "unless-stopped"
+
     volumes:
       - ./data:/ldproxy/data
-    
+
     labels:
       # Enable Traefik routing on overlay service network
       - "traefik.enable=true"

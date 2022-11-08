@@ -16,6 +16,8 @@ services:
     env_file:
       - ghc.env
 
+    restart: "unless-stopped"
+
     labels:
       # Enable Traefik routing on overlay service network
       - "traefik.enable=true"

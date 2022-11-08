@@ -4,7 +4,7 @@ version: '3.3'
 services:
 
   pygeoapi:
-    
+
     image: ${DOCKER_IMAGE}
 
     container_name: ${SERVICE_NAME}
@@ -19,11 +19,13 @@ services:
       # Specific to Flask apps
       - SCRIPT_NAME=${SERVICE_PATH}
 
+    restart: "unless-stopped"
+
     volumes:
       # Map data and config into pygeoapi container
       - ./local.config.yml:/pygeoapi/local.config.yml
       - ./data:/pygeoapi/data
-      
+
     labels:
       # Enable Traefik routing on overlay service network
       - "traefik.enable=true"

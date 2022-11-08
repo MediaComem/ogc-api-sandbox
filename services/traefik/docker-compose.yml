@@ -6,6 +6,8 @@ services:
 
     container_name: traefik
 
+    restart: "unless-stopped"
+
     command:
       # Create an entrypoint "http" listening on port 80
       - --entrypoints.http.address=:80

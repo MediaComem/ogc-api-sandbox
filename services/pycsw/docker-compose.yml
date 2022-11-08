@@ -4,7 +4,7 @@ version: '3.3'
 services:
 
   pycsw:
-    
+
     image: ${DOCKER_IMAGE}
 
     container_name: ${SERVICE_NAME}
@@ -14,6 +14,8 @@ services:
 
 #    ports:
 #     - "5000:80"
+
+    restart: "unless-stopped"
 
     environment:
       # Specific to Flask apps
