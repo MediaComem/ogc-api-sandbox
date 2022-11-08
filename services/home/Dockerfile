@@ -2,7 +2,12 @@ FROM python:3.8.10-slim-buster
 
 LABEL maintainer="Maxime Collombin <maxime.collombin@heig-vd.ch>"
 
-RUN pip install mkdocs mkdocs-material
+# mkdocs default & additional plugins:
+
+# https://github.com/blueswen/mkdocs-glightbox/
+
+RUN pip install mkdocs mkdocs-material \
+    mkdocs-glightbox
 
 COPY ./src/ /docs/
 
