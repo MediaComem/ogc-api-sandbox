@@ -5,75 +5,6 @@
   <blobStores/>
   <gridSets>
     <gridSet>
-      <name>EPSG:2056</name>
-      <description>EPSG:2056 (CH1903+ / LV95) tile matrix set</description>
-      <srs>
-        <number>2056</number>
-      </srs>
-      <extent>
-        <coords>
-          <double>2485014.052451379</double>
-          <double>1074188.6943776933</double>
-          <double>2837016.9329778464</double>
-          <double>1299782.763494124</double>
-        </coords>
-      </extent>
-      <alignTopLeft>false</alignTopLeft>
-      <resolutions>
-        <double>881.226832486057</double>
-        <double>440.6134162430285</double>
-        <double>220.30670812151425</double>
-        <double>110.15335406075712</double>
-        <double>55.07667703037856</double>
-        <double>27.53833851518928</double>
-        <double>13.76916925759464</double>
-        <double>6.88458462879732</double>
-        <double>3.44229231439866</double>
-        <double>1.72114615719933</double>
-        <double>0.860573078599665</double>
-        <double>0.4302865392998325</double>
-        <double>0.2151432696499163</double>
-        <double>0.1075716348249581</double>
-        <double>0.0537858174124791</double>
-        <double>0.0268929087062395</double>
-        <double>0.0134464543531198</double>
-        <double>0.0067232271765599</double>
-        <double>0.0033616135882799</double>
-        <double>0.0016808067941399</double>
-        <double>8.4040339707E-4</double>
-        <double>4.20201698535E-4</double>
-      </resolutions>
-      <metersPerUnit>1.0</metersPerUnit>
-      <pixelSize>2.8E-4</pixelSize>
-      <scaleNames>
-        <string>EPSG:2056:0</string>
-        <string>EPSG:2056:1</string>
-        <string>EPSG:2056:2</string>
-        <string>EPSG:2056:3</string>
-        <string>EPSG:2056:4</string>
-        <string>EPSG:2056:5</string>
-        <string>EPSG:2056:6</string>
-        <string>EPSG:2056:7</string>
-        <string>EPSG:2056:8</string>
-        <string>EPSG:2056:9</string>
-        <string>EPSG:2056:10</string>
-        <string>EPSG:2056:11</string>
-        <string>EPSG:2056:12</string>
-        <string>EPSG:2056:13</string>
-        <string>EPSG:2056:14</string>
-        <string>EPSG:2056:15</string>
-        <string>EPSG:2056:16</string>
-        <string>EPSG:2056:17</string>
-        <string>EPSG:2056:18</string>
-        <string>EPSG:2056:19</string>
-        <string>EPSG:2056:20</string>
-        <string>EPSG:2056:21</string>
-      </scaleNames>
-      <tileHeight>256</tileHeight>
-      <tileWidth>256</tileWidth>
-      <yCoordinateFirst>false</yCoordinateFirst>
-    </gridSet>
-    <gridSet>
       <name>EPSG:21781</name>
       <description>EPSG:21781</description>
       <srs>
@@ -137,6 +68,63 @@
         <string>EPSG:21781:19</string>
         <string>EPSG:21781:20</string>
         <string>EPSG:21781:21</string>
+      </scaleNames>
+      <tileHeight>256</tileHeight>
+      <tileWidth>256</tileWidth>
+      <yCoordinateFirst>false</yCoordinateFirst>
+    </gridSet>
+    <gridSet>
+      <name>EPSG:2056</name>
+      <description>EPSG:2056 (CH1903+ / LV95) tile matrix set.</description>
+      <srs>
+        <number>2056</number>
+      </srs>
+      <extent>
+        <coords>
+          <double>2485014.052451379</double>
+          <double>1074188.6943776933</double>
+          <double>2837016.9329778464</double>
+          <double>1299782.763494124</double>
+        </coords>
+      </extent>
+      <alignTopLeft>false</alignTopLeft>
+      <resolutions>
+        <double>4000.0</double>
+        <double>2000.0</double>
+        <double>1000.0</double>
+        <double>500.0</double>
+        <double>250.0</double>
+        <double>100.0</double>
+        <double>50.0</double>
+        <double>20.0</double>
+        <double>10.0</double>
+        <double>5.0</double>
+        <double>2.5</double>
+        <double>1.0</double>
+        <double>0.5</double>
+        <double>0.25</double>
+        <double>0.1</double>
+        <double>0.05</double>
+      </resolutions>
+      <metersPerUnit>1.0</metersPerUnit>
+      <pixelSize>2.8E-4</pixelSize>
+      <scaleNames>
+        <string>EPSG:2056:0</string>
+        <string>EPSG:2056:1</string>
+        <string>EPSG:2056:2</string>
+        <string>EPSG:2056:3</string>
+        <string>EPSG:2056:4</string>
+        <string>EPSG:2056:5</string>
+        <string>EPSG:2056:6</string>
+        <string>EPSG:2056:7</string>
+        <string>EPSG:2056:8</string>
+        <string>EPSG:2056:9</string>
+        <string>EPSG:2056:10</string>
+        <string>EPSG:2056:11</string>
+        <string>EPSG:2056:12</string>
+        <string>EPSG:2056:13</string>
+        <string>EPSG:2056:14</string>
+        <string>EPSG:2056:15</string>
       </scaleNames>
       <tileHeight>256</tileHeight>
       <tileWidth>256</tileWidth>
