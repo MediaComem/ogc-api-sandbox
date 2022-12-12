@@ -792,11 +792,11 @@ resources:
     collections_metadata:
         type: collection
         title:
-            en: Smpashot Collections metadata
+            en: Smapshot Collections metadata
             fr-CH: Métadonnées des collections de Smapshot
         description:
             en: "Smapshot Collections metadata"
-            fr-CH: "Métadonnées associées aux collections photgraphiquesde Smapshot"
+            fr-CH: "Métadonnées associées aux collections photgraphiques de Smapshot"
         keywords:
             en:
                 - Smapshot API
@@ -962,8 +962,8 @@ resources:
     # ndvi
     ndvi:
         type: collection
-        title: GEOTIFF file
-        description: NDVI as geotiff file
+        title: OGC API Coverages
+        description: OGC API Coverages example
         keywords:
             - switzerland
             - ndvi
