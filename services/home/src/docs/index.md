@@ -9,7 +9,9 @@ Main website and documentation are avalaible here: [apitestdocs.geonovum.nl](htt
  
 Below the (web-) services running on this domain. Click links to view and interact.
 
-!!! note  This is a work in progress and changes are expected to occur regularly.
+!!! note  
+
+This is a work in progress and changes are expected to occur regularly.
 
 ## OGC API Features
 
@@ -77,6 +79,16 @@ Open Source products running in this instance.
 |--------|------|-------------|
 | [STAC](https://explorer.swissdatacube.org/stac) | [Radiant Earth Foundation](https://www.radiant.earth/techresource/spatio-temporal-asset-catalog-stac/) | [Link](https://stacspec.org/en/tutorials/)|
 |[/pygeoapi](https://ogc.heig-vd.ch/pygeoapi/stac?f=html) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/)|
+
+## OGC API Processes
+
+Access the interactive endpoints of [OGC API Processes](https://docs.ogc.org/is/18-062r2/18-062r2.html) 
+Open Source products running in this instance. 
+<br>A link to the documentation is also provided.
+
+| Endpoint | Author | Documentation |
+|--------|------|-------------|
+| [OGC API Processes](https://ogc.heig-vd.ch/pygeoapi/processes?f=html) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/)|
 
 ## SensorThings API
 

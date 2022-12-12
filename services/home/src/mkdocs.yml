@@ -7,7 +7,10 @@ repo_url: https://github.com/MediaComem/ogc-api-sandbox/
 nav:
     - Home: index.md
     - Howtos: 
-        - vector-data/vector-data.md
+        - oa-features/OGC-API-Features.md
+        - oa-coverages/OGC-API-Coverages.md
+        - oa-maps/OGC-API-Maps.md
+        - oa-tiles/OGC-API-Tiles.md
     - Code: https://github.com/MediaComem/ogc-api-sandbox/
 
 # use_directory_urls: true
@@ -17,7 +20,29 @@ theme:
   palette:
       # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-scheme
       # Default is indigo (blue)
+    #   primary: indigo
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
+      accent: "deep orange"
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode sombre
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: "deep orange"
+      toggle:
+        icon: material/weather-night
+        name: Basculer sur le réglage système
 
 plugins:
     - search
