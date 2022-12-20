@@ -958,12 +958,11 @@ resources:
               id_field: id
               time_field: editionDate
               title_field: title              
-    # Ressources UNIGE
-    # ndvi
+    # Collection # 10: NDIV as OGC API Coverages (UNIGE)
     ndvi:
         type: collection
-        title: OGC API Coverages
-        description: OGC API Coverages example
+        title: NDIV as OGC API Coverages
+        description: NDIV as OGC API Coverages (UNIGE)
         keywords:
             - switzerland
             - ndvi
@@ -994,7 +993,7 @@ resources:
               format:
                   name: GTiff
                   mimetype: image/tiff; application=geotiff
-    # NDWI data as STAC
+    # Collection # 11: NDWI as OGC API STAC (UNIGE)
     ndwi:
         type: stac-collection
         title: NDWI data as STAC
@@ -1025,7 +1024,75 @@ resources:
               data: data/ndwi/
               file_types:
                   - .tif
-    # NDWI Metadata
+    # Collection # 12: NDWI as OGC API EDR (UNIGE)
+    ndwi-edr:
+        type: collection
+        title: NDWI as OGC API EDR
+        description: NDWI as netcdf file using EDR
+        keywords:
+            - ndwi
+            - geneva
+        extents:
+            spatial:
+                bbox: [5.955901955143183,45.81795848130465,10.492171265453214,47.80845430298337]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://eccc-msc.github.io/open-data/msc-data/nwp_gdps/readme_gdps_en
+              hreflang: en-CA
+        providers:
+            - type: xarray-edr
+              name: xarray-edr
+              data: data/geneva_ndwi.nc
+              x_field: lat
+              y_field: lon
+              time_field: time
+              format:
+                  name: netcdf
+                  mimetype: application/x-netcdf2
+    # Collection # 13: OGC API Tiles
+    ogcapi-tiles:
+        type: collection
+        title: Local Climate Zones
+        description: Local Climate Zones as OGC API Tiles
+        keywords:
+            - geoclimate
+            - urban heat islands
+            - osm
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://github.com/orbisgis/geoclimate
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [6.604342890453713,46.73864780045886,6.672052698054584,46.79537989717215]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2011-11-11
+                end: null  # or empty
+        providers:
+            - type: feature
+              name: GeoJSON
+              data: data/rsu_lcz.geojson
+            - type: tile
+              name: MVT
+              data: data/tiles
+              options:
+                  metadata_format: tilejson # default | tilejson
+                  bounds: [[6.604342890453713,46.73864780045886],[6.672052698054584,46.79537989717215]]
+                  zoom:
+                      min: 0
+                      max: 16
+                  schemes:
+                      - WorldCRS84Quad
+              format:
+                  name: pbf
+                  mimetype: application/vnd.mapbox-vector-tile
+    # Records # 7: NDWI Metadata
     ndwi-metadata:
         type: collection
         title: NDWI metadata
@@ -1081,34 +1148,6 @@ resources:
     #           format:
     #               name: netcdf
     #               mimetype: application/x-netcdf2
-    # NDWI EDR
-    ndwi-edr:
-        type: collection
-        title: EDR from NetCDF
-        description: NDWI as netcdf file using EDR
-        keywords:
-            - ndwi
-            - geneva
-        extents:
-            spatial:
-                bbox: [5.955901955143183,45.81795848130465,10.492171265453214,47.80845430298337]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://eccc-msc.github.io/open-data/msc-data/nwp_gdps/readme_gdps_en
-              hreflang: en-CA
-        providers:
-            - type: xarray-edr
-              name: xarray-edr
-              data: data/geneva_ndwi.nc
-              x_field: lat
-              y_field: lon
-              time_field: time
-              format:
-                  name: netcdf
-                  mimetype: application/x-netcdf2
     # Process #1
     hello-world:
         type: process

@@ -58,6 +58,7 @@ Open Source products running in this instance.
 | Endpoint | Author | Documentation |
 |--------|------|-------------|
 | [/geoserver](/geoserver/ogc/tiles) | [GeoServer Community](https://geoserver.org/) | [Link](https://docs.geoserver.org/latest/en/user/community/ogc-api/index.html)|
+| [/pygeoapi](/pygeoapi/collections/ogcapi-tiles) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/en/latest/)|
 
 ## OGC API Records
 
@@ -68,6 +69,26 @@ Open Source products running in this instance.
 | Endpoint | Author | Documentation |
 |--------|------|-------------|
 | [/pygeoapi](/pygeoapi) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/)|
+
+## OGC API Coverages
+
+Access the interactive endpoints of [OGC API Coverages (draft)](https://docs.ogc.org/DRAFTS/19-087.html) 
+Open Source products running in this instance. 
+<br>A link to the documentation is also provided.
+
+| Endpoint | Author | Documentation |
+|--------|------|-------------|
+| [/pygeoapi](/pygeoapi/collections/ndvi) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/en/latest/)|
+
+## OGC API Environmental Data Retrieval (EDR)
+
+Access the interactive endpoints of [OGC API EDR](https://docs.ogc.org/is/19-086r5/19-086r5.html) 
+Open Source products running in this instance. 
+<br>A link to the documentation is also provided.
+
+| Endpoint | Author | Documentation |
+|--------|------|-------------|
+| [/pygeoapi](/pygeoapi/collections/ndwi-edr) | [GeoPython Community](https://geopython.github.io/) | [Link](https://docs.pygeoapi.io/en/latest/)|
 
 ## STAC (SpatioTemporal Asset Catalogs)
 
