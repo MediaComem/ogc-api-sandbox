@@ -31,4 +31,3 @@ Follow these steps to connect to a service and query datasets:
 - select the desired collection
 
 ![STAC browser](stac-browser.png)
-
