@@ -11,6 +11,8 @@ nav:
         - oa-coverages/OGC-API-Coverages.md
         - oa-maps/OGC-API-Maps.md
         - oa-tiles/OGC-API-Tiles.md
+        - oa-records/OGC-API-Records.md
+        - stac/STAC.md
     - Code: https://github.com/MediaComem/ogc-api-sandbox/
 
 # use_directory_urls: true
