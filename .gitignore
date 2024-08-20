@@ -37,11 +37,13 @@ services/postgis/pgadmin.env
 .env
 ansible/hosts/prod.yml
 ansible/setenv.yml
-services/ldproxy/data/proj/
 ansible/vars/vars.yml.old
+services/ldproxy/data/proj/
+services/admin/ghc.env
 
 # data files
 
+services/ldproxy/data/
 services/pygeoapi/data/
 services/geoserver/data/
 services/qgis/data/

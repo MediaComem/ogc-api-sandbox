@@ -1,10 +1,10 @@
 ---
-title: NGDI-20-60 OGC API Testbed Platform
+title: HEIG-VD OGC API Testbed Platform
 ---
 
-# NGDI-20-60 OGC API Testbed Platform
+# HEIG-VD OGC API Testbed Platform
 
-Landing page of the **NGDI-20-60 OGC API Testbed Platform** maintained <br> by [HEIG-VD](https://heig-vd.ch/rad/instituts/mei/mediamaps), [SUPSI](https://www.supsi.ch/ist/servizi/geomatica.html) and [UNIGE](https://www.unige.ch/environnement/en/) on the basis of a "fork" of the Geonovum OGC-API-Testbed suite.    
+Landing page of the **HEIG-VD OGC API Testbed Platform** maintained <br> by [HEIG-VD](https://heig-vd.ch/rad/instituts/mei/mediamaps) on the basis of a "fork" of the Geonovum OGC-API-Testbed suite.    
 Main website and documentation are avalaible here: [apitestdocs.geonovum.nl](https://apitestdocs.geonovum.nl).
  
 Below the (web-) services running on this domain. Click links to view and interact.

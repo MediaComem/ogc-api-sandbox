@@ -1,8 +1,0 @@
-server:
-  externalUrl: https://ogc.heig-vd.ch/ldproxy
-logging:
-  level: 'OFF'
-  appenders:
-    - type: console
-  loggers:
-    de.ii: INFO

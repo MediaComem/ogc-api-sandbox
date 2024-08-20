@@ -44,5 +44,4 @@ services:
 
 networks:
   default:
-    external:
-      name: service-network
+    name: service-network

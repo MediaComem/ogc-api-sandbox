@@ -15,12 +15,15 @@ services:
 #    ports:
 #     - "5000:80"
 
-   restart: "unless-stopped"
+    restart: "unless-stopped"
 
     environment:
-      - QGIS_SERVER_LOG_LEVEL=1
+      - QGIS_SERVER_LOG_LEVEL=0
       #- PGSERVICEFILE:If you want to change the default of /etc/qgisserver/pg_service.conf
+      - PGSERVICEFILE=/etc/qgisserver/pg_service.conf
       - QGIS_PROJECT_FILE=/etc/qgisserver/project.qgs
+      #- QGIS_PROJECT_FILE=/etc/qgisserver/r-pod.qgs
+      - QGIS_SERVER_LANDING_PAGE_PROJECTS_DIRECTORIES=/etc/qgisserver
       #- QGIS_SERVER_IGNORE_BAD_LAYERS:true
       #- MAX_REQUESTS_PER_PROCESS:The number of requests a QGIS server will serve before being restarted by apache
       #- QGIS_CATCH_SEGV:1
@@ -29,6 +32,9 @@ services:
       # Map data and config into  container
       - ./data:/etc/qgisserver
       - ${HOME}/data:/etc/data
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
     labels:
       # Enable Traefik routing on overlay service network
@@ -53,5 +59,4 @@ services:
 
 networks:
   default:
-    external:
-      name: service-network
+    name: service-network

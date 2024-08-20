@@ -25,6 +25,8 @@ services:
       # Map data and config into pygeoapi container
       - ./local.config.yml:/pygeoapi/local.config.yml
       - ./data:/pygeoapi/data
+      # - ./plugin.py:/pygeoapi/plugin.py
+      # - ./process:/pygeoapi/process
 
     labels:
       # Enable Traefik routing on overlay service network
@@ -45,5 +47,4 @@ services:
 
 networks:
   default:
-    external:
-      name: service-network
+    name: service-network

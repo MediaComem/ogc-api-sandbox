@@ -12,3 +12,4 @@ export SERVICE_PATH="/${SERVICE_NAME}"
 export DOCKER_IMAGE_NAME="geopython/pygeoapi"
 export DOCKER_IMAGE_VERSION="latest"
 export DOCKER_IMAGE="${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+

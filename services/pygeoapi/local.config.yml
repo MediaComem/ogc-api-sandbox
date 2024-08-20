@@ -38,16 +38,16 @@ logging:
 
 metadata:
     identification:
-        title: 
-            en: NGDI-20-60 OGC API Testbed Platform
-            de: NGDI-20-60 OGC API Testbed Plattform
-            fr-CH: Plateforme de test INDG-20-60 OGC API
-            it: NGDI-20-60 Piattaforma del banco di prova delle API OGC
-        description: 
-            en: Implementation showing the use of pygeoapi as part of the NGDI-20-60 OGC API Testbed Platform
-            de: Implementierung, die die Verwendung von pygeoapi als Teil der NGDI-20-60 OGC API Testbed Plattform zeigt
-            fr-CH: Implémentation montrant l'utilisation de pygeoapi dans le cadre de la plate-forme de test de l'API OGC NGDI-20-60.
-            it: Implementazione che mostra l'uso di pygeoapi come parte della piattaforma NGDI-20-60 OGC API Testbed
+        title:
+            en: HEIG-VD OGC API Testbed Platform
+            de: HEIG-VD OGC API Testbed Plattform
+            fr-CH: Plateforme de test HEIG-VD OGC API
+            it: HEIG-VD Piattaforma del banco di prova delle API OGC
+        description:
+            en: Implementation showing the use of pygeoapi as part of the HEIG-VD OGC API Testbed Platform
+            de: Implementierung, die die Verwendung von pygeoapi als Teil der HEIG-VD OGC API Testbed Plattform zeigt
+            fr-CH: Implémentation montrant l'utilisation de pygeoapi dans le cadre de la plate-forme de test de HEIG-VD OGC API.
+            it: Implementazione che mostra l'uso di pygeoapi come parte della piattaforma HEIG-VD OGC API Testbed
         keywords:
             en:
                 - geospatial
@@ -75,8 +75,8 @@ metadata:
                 - UNIGE
                 - SUPSI
                 - swisstopo
-                - INDGI                
-            it: 
+                - INDGI
+            it:
                 - geospaziale
                 - dati
                 - api
@@ -328,10 +328,10 @@ resources:
     ffp_foret_protectrice_ge:
         type: collection
         lang: en-US
-        title: 
+        title:
             en: Protective forests in the canton of Geneva
             fr: FFP - Forêts protectrices du canton de Genève
-        description: 
+        description:
             en: Protective forests against natural hazards such as erosion, landslides and rockfalls - validated by the Federal Office for the Environment
             de: Wälder zum Schutz vor Naturgefahren wie Erosion, Rutschungen und Steinschlag - validiert durch das Bundesamt für Umwelt
             fr: Forêts de protection contre les dangers naturels tels que l'érosion, les glissements et les chutes de pierres - validées par l'Office fédérale de l'environnement
@@ -347,7 +347,7 @@ resources:
             de:
                 - FFP
                 - Wald
-                - Naturgefahren 
+                - Naturgefahren
                 - Schutz
                 - Open Data
                 - SITG
@@ -394,60 +394,60 @@ resources:
     kataster-belasteter-standorte-zivilflugplaetze_standort:
         type: collection
         lang: en-US
-        title: 
+        title:
             en: Cadastre of contaminated sites on civil aerodromes (CCS FOCA)
             de: Kataster der belasteten Standorte im Bereich der zivilen Flugplätze (KbS BAZL)
             fr: Cadastre des sites pollués – domaine des aérodromes civils (CSP OFAC)
             it: Catasto dei siti inquinati nel settore degli aeroporti civili (CSIN UFAC)
-        description: 
+        description:
             en: "Public register of contaminated sites within the perimeter of civil aerodromes. This includes information about the location, type and quantity of waste, the period of deposition, as well as conducted studies and measures. The following types of sites can be distinguished: operating site, accident site and deposition site."
             de: "Öffentlich zugänglicher Kataster der belasteten Standorte im Perimeter der zivilen Flugplätze. Der Kataster gibt unter anderem Auskunft über die Lage, die Art und Menge der an den Standort gelangten Abfälle, den Ablagerungszeitraum, sowie durchgeführte Untersuchungen und Massnahmen. Unterschieden werden folgende Standorttypen: Betriebsstandort, Unfallstandort und Ablagerungsstandort."
             fr: "Cadastre public des sites pollués dans le périmètre des aérodromes civils. Le cadastre renseigne dans la mesure du possible sur l’emplacement, le type et la quantité de déchets présents sur le site, sur la période de stockage des déchets et sur les investigations et les mesures de protection de l’environnement déjà réalisées. On distingue entre les types de sites suivants: aires d’exploitation, lieux d’accident et sites de stockage."
             it: "Catasti pubblici dei siti inquinati nel perimetro degli aerodromi civili. Il catasto informa, tra l’altro, sull’ubicazione, sul tipo e la quantità di rifiuti presenti sul sito, sui tempi di deposito, sulle verifiche effettuate e le misure adottate. Si distingue tra i seguenti tipi di siti: aree d’impresa, luoghi d’incidente, siti di stoccaggio."
         keywords:
             en:
-                - polluted site  
-                - air navigation  
-                - airfield  
-                - official geodata  
-                - Conservation and archiving planning AAP - Confederation  
-                - opendata.swiss  
-                - FSDI Federal Spatial Data Infrastructure 
-                - airport  
-                - old hazardous site   
+                - polluted site
+                - air navigation
+                - airfield
+                - official geodata
+                - Conservation and archiving planning AAP - Confederation
+                - opendata.swiss
+                - FSDI Federal Spatial Data Infrastructure
+                - airport
+                - old hazardous site
                 - Environmental monitoring facilities
             de:
-                - Belasteter Standort  
-                - Luftfahrt  
-                - Flugplatz  
-                - Geobasisdaten  
-                - Aufbewahrungs- und Archivierungsplanung AAP - Bund  
-                - opendata.swiss  
-                - BGDI Bundesgeodaten-Infrastruktur
-                - Flughafen  
-                - Altlast 
-                - Umweltüberwachung 
-            fr-CH: 
-                - site pollué  
-                - navigation aérienne  
-                - aérodrome
-                - géodonnées de base  
-                - Planification de la conservation et de l'archivage AAP - Conféderation  
+                - Belasteter Standort
+                - Luftfahrt
+                - Flugplatz
+                - Geobasisdaten
+                - Aufbewahrungs- und Archivierungsplanung AAP - Bund
                 - opendata.swiss
-                - IFDG l’Infrastructure Fédérale de données géographiques  
+                - BGDI Bundesgeodaten-Infrastruktur
+                - Flughafen
+                - Altlast
+                - Umweltüberwachung
+            fr-CH:
+                - site pollué
+                - navigation aérienne
+                - aérodrome
+                - géodonnées de base
+                - Planification de la conservation et de l'archivage AAP - Conféderation
+                - opendata.swiss
+                - IFDG l’Infrastructure Fédérale de données géographiques
                 - aéroport
-                - site ancien dangereux   
+                - site ancien dangereux
                 - Installations de suivi environnemental
             it:
                 - sito inquinato
-                - navigazione aerea  
-                - aerodromo  
-                - geodati di base  
-                - Pianificazione della conservazione e dell’archiviazione AAP - Confederazione  
-                - opendata.swiss  
-                - IFDG Infrastruttura federale dei dati geografici 
-                - aeroporto  
-                - discarica dismessa  
+                - navigazione aerea
+                - aerodromo
+                - geodati di base
+                - Pianificazione della conservazione e dell’archiviazione AAP - Confederazione
+                - opendata.swiss
+                - IFDG Infrastruttura federale dei dati geografici
+                - aeroporto
+                - discarica dismessa
                 - Impianti di monitoraggio ambientale
         crs:
             - CRS84
@@ -479,15 +479,15 @@ resources:
         type: collection
         # visibility: hidden
         lang: en-US
-        title: 
+        title:
             en: Smapshot images location
-        description: 
+        description:
             en: "Smapshot images location"
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         crs:
             - CRS84
         links:
@@ -514,72 +514,72 @@ resources:
               table: images #images_location
               geom_field: location
               # List of fields to be exposed
-              properties: 
-                - id                  
+              properties:
+                - id
                 - name
                 - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
+                - date_shot
+                - date_georef
+                - title
+                - link
+                - license
+                - azimuth
+                - tilt
+                - roll
+                - focal
+                - px
+                - py
                 - location
-                - collection_id       
-                - owner_id            
-                - user_id             
+                - collection_id
+                - owner_id
+                - user_id
                 - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
+                - view_type
+                - apriori_altitude
+                - validator_id
                 - is_published
                 - exact_date
-                - date_shot_min       
-                - date_shot_max       
+                - date_shot_min
+                - date_shot_max
                 - original_id
                 - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
+                - caption
+                - height
+                - width
+                - orig_title
+                - orig_caption
                 - correction_enabled
-                - observation_enabled 
-                - download_link       
+                - observation_enabled
+                - download_link
                 - date_orig
                 - downloaded
                 - download_timestamp
-                - viewshed_created    
-                - geotag_created      
+                - viewshed_created
+                - geotag_created
                 - geotag_timestamp
                 - viewshed_timestamp
                 - date_validated
                 - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
+                - shop_link
+                - geolocalisation_id
+                - state
                 - country_iso_a2
-                - original_state      
-                - framing_mode        
+                - original_state
+                - framing_mode
     # Collection # 8 (smapshot images viewshed simple):
     images_viewshed_simple:
         type: collection
         # visibility: hidden
         lang: en-US
-        title: 
+        title:
             en: Smapshot images viewshed simple
-        description: 
+        description:
             en: "Smapshot images viewshed simple"
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         crs:
             - CRS84
         links:
@@ -607,71 +607,71 @@ resources:
               geom_field: viewshed_simple
               # List of fields to be exposed
               properties:
-                - id                  
+                - id
                 - name
                 - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
-                - collection_id       
-                - owner_id            
-                - user_id             
+                - date_shot
+                - date_georef
+                - title
+                - link
+                - license
+                - azimuth
+                - tilt
+                - roll
+                - focal
+                - px
+                - py
+                - collection_id
+                - owner_id
+                - user_id
                 - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
+                - view_type
+                - apriori_altitude
+                - validator_id
                 - is_published
                 - exact_date
-                - date_shot_min       
-                - date_shot_max       
+                - date_shot_min
+                - date_shot_max
                 - original_id
                 - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
+                - caption
+                - height
+                - width
+                - orig_title
+                - orig_caption
                 - correction_enabled
-                - observation_enabled 
-                - download_link       
+                - observation_enabled
+                - download_link
                 - date_orig
                 - downloaded
                 - download_timestamp
                 - viewshed_simple
-                - viewshed_created    
-                - geotag_created      
+                - viewshed_created
+                - geotag_created
                 - geotag_timestamp
                 - viewshed_timestamp
                 - date_validated
                 - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
+                - shop_link
+                - geolocalisation_id
+                - state
                 - country_iso_a2
-                - original_state      
+                - original_state
                 - framing_mode
     # Collection # 9 (smapshot images footprint):
     images_footprint:
         type: collection
         # visibility: hidden
         lang: en-US
-        title: 
+        title:
             en: Smapshot images footprint
-        description: 
+        description:
             en: "Smapshot images footprint"
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         crs:
             - CRS84
         links:
@@ -699,95 +699,165 @@ resources:
               geom_field: footprint
               # List of fields to be exposed
               properties:
-                - id                  
+                - id
                 - name
                 - date_inserted
-                - date_shot           
-                - date_georef         
-                - title               
-                - link                
-                - license             
-                - azimuth             
-                - tilt                
-                - roll                
-                - focal               
-                - px                  
-                - py                  
-                - collection_id       
-                - owner_id            
-                - user_id             
+                - date_shot
+                - date_georef
+                - title
+                - link
+                - license
+                - azimuth
+                - tilt
+                - roll
+                - focal
+                - px
+                - py
+                - collection_id
+                - owner_id
+                - user_id
                 - geotags_array
-                - view_type           
-                - apriori_altitude    
-                - validator_id        
+                - view_type
+                - apriori_altitude
+                - validator_id
                 - is_published
                 - exact_date
-                - date_shot_min       
-                - date_shot_max       
+                - date_shot_min
+                - date_shot_max
                 - original_id
                 - link_id
-                - caption             
-                - height              
-                - width               
-                - orig_title          
-                - orig_caption        
+                - caption
+                - height
+                - width
+                - orig_title
+                - orig_caption
                 - correction_enabled
-                - observation_enabled 
-                - download_link       
+                - observation_enabled
+                - download_link
                 - date_orig
                 - downloaded
                 - download_timestamp
-                - geotag_created      
+                - geotag_created
                 - geotag_timestamp
                 - viewshed_timestamp
                 - date_validated
                 - last_start
-                - shop_link           
-                - geolocalisation_id  
-                - state               
+                - shop_link
+                - geolocalisation_id
+                - state
                 - country_iso_a2
-                - original_state      
+                - original_state
                 - footprint
                 - framing_mode
-    #  Records # 1: Metadata mgm (TinyDB provider)
-    mgm_metadata:
+    # # Collection # 10: OGC API Tiles
+    # ogcapi-tiles:
+    #     type: collection
+    #     title: Local Climate Zones
+    #     description: Local Climate Zones as OGC API Tiles
+    #     keywords:
+    #         - geoclimate
+    #         - urban heat islands
+    #         - osm
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: information
+    #           href: https://github.com/orbisgis/geoclimate
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [6.604342890453713,46.73864780045886,6.672052698054584,46.79537989717215]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #         temporal:
+    #             begin: null
+    #             end: null  # or empty
+    #     providers:
+    #         - type: feature
+    #           name: GeoJSON
+    #           data: data/rsu_lcz.geojson
+    #         - type: tile
+    #           name: MVT
+    #           data: data/tiles
+    #           options:
+    #               metadata_format: tilejson # default | tilejson
+    #               bounds: [[6.604342890453713,46.73864780045886],[6.672052698054584,46.79537989717215]]
+    #               zoom:
+    #                   min: 0
+    #                   max: 16
+    #               schemes:
+    #                   - WorldCRS84Quad
+    #           format:
+    #               name: pbf
+    #               mimetype: application/vnd.mapbox-vector-tile
+    # Collection # 11 (pure_adr):
+    pure_adr:
         type: collection
-        title:
-            en: MGM metadata
-            de: MGM Metadaten
-            fr-CH: Métadonnées MGM
-            it: MMG metadati
-        description:
-            en: "Metadata associated with minimum geodata models"
-            de: "Metadaten, die mit minimalen Geodatenmodellen verknüpft sind"
-            fr-CH: "Métadonnées associées aux modèles minimaux de géodonnées"
-            it: "Metadati associati a modelli minimi di geodati"
+        lang: fr-CH
+        title: 'Répertoire des adresses de bâtiments'
+        description: Répertoire des adresses de bâtiments de la commune d'Yverdon-les-Bains
         keywords:
-            en:
-                - mgm  
+            fr-CH:
+                - RegBL
+                - OFS
                 - swisstopo
-                - KGK/CGC
-                - opendata.swiss
+        crs:
+            - CRS84
+            - EPSG:2056
         links:
             - type: text/html
               rel: canonical
               title: information
-              href: https://www.geo.admin.ch/fr/geoinformation-suisse/geodonnees-de-base/modeles-geodonnees.html
+              href: https://www.swisstopo.admin.ch/fr/geodata/repertoires-officiels-geographiques/repertoire-adresses-batiments.html
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [5.955901955143183,45.81795848130465,10.492171265453214,47.80845430298337]
+                bbox: [6.60436298929917,46.73864469687482,6.671878894019629,46.795219619910334]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin:
-                end: null  # or empty (either means open ended)
+        providers:
+            - type: feature
+              name: PostgreSQL
+              data:
+                  host: postgis
+                  port: 5432
+                  dbname: postgres
+                  user: postgres
+                  password: postgres
+                  search_path: [public]
+              id_field: ogc_fid
+              table: pure_adr
+              geom_field: wkb_geometry
+              source_srs: EPSG:4326
+              target_srs: EPSG:2056
+    #  Records # 1: OGC API Records based on the Swiss Geometadata Catalogue 
+    geocat:
+        type: collection
+        title: Swiss Geometadata Catalogue (geocat.ch)
+        description: geocat.ch, Switzerland's geographic catalogue, documents all the geodata, geoservices and models in Switzerland.
+        keywords:
+            - metadata
+            - swisstopo
+            - geocat
+        links:
+            - type: text/html
+              rel: canonical
+              title: geocat
+              href: https://www.geocat.ch
+        extents:
+            spatial:
+                # bbox: [-180,-90,180,90]
+                bbox: [5.83599354331156, 45.6939911225504, 10.6429883601277, 47.8389915641108]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: record
-              name: TinyDBCatalogue
-              data: data/records/metadata-mgm.db
-              id_field: id
-              time_field: editionDate
+              name: CSWFacade
+              data: https://www.geocat.ch/geonetwork/srv/fre/csw
+              id_field: identifier
+              time_field: datetime
               title_field: title
+              crs:
+                - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                - http://www.opengis.net/def/crs/EPSG/0/2056
+              storage_crs: https://www.opengis.net/def/crs/EPSG/0/2056
     #  Records # 2: Smapshot collections metadata
     collections_metadata:
         type: collection
@@ -800,8 +870,8 @@ resources:
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         links:
             - type: text/html
               rel: canonical
@@ -810,7 +880,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694] 
+                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -834,8 +904,8 @@ resources:
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         links:
             - type: text/html
               rel: canonical
@@ -844,7 +914,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]                
+                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -861,15 +931,15 @@ resources:
         type: collection
         title:
             en: Smapshot Photographers metadata
-            fr-CH: Métadonnées relatives aux photographes de Smapshot   
+            fr-CH: Métadonnées relatives aux photographes de Smapshot
         description:
             en: "Smapshot Photographers metadata"
             fr-CH: "Métadonnées relatives aux photographes de Smapshot"
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing    
+                - 3D Pictures
+                - Crowdsourcing
         links:
             - type: text/html
               rel: canonical
@@ -878,7 +948,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]              
+                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -902,8 +972,8 @@ resources:
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing  
+                - 3D Pictures
+                - Crowdsourcing
         links:
             - type: text/html
               rel: canonical
@@ -912,7 +982,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [-23.009072999999997,-43.30165000000002,24.25783648748297,55.68427723479694]                
+                bbox: [-23.009072999999997,-43.30165000000002,24.25783648748297,55.68427723479694]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -936,8 +1006,8 @@ resources:
         keywords:
             en:
                 - Smapshot API
-                - 3D Pictures  
-                - Crowdsourcing    
+                - 3D Pictures
+                - Crowdsourcing
         links:
             - type: text/html
               rel: canonical
@@ -946,7 +1016,7 @@ resources:
               hreflang: fr-CH
         extents:
             spatial:
-                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]                
+                bbox: [-43.30165000000002,-23.009072999999997,13.947644850489418,55.68427723479694]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
@@ -957,8 +1027,8 @@ resources:
               data: data/records/smapshot/geometadata.db
               id_field: id
               time_field: editionDate
-              title_field: title              
-    # Collection # 10: NDIV as OGC API Coverages (UNIGE)
+              title_field: title
+    # Collection # 12: NDIV as OGC API Coverages (UNIGE)
     ndvi:
         type: collection
         title: NDIV as OGC API Coverages
@@ -993,7 +1063,7 @@ resources:
               format:
                   name: GTiff
                   mimetype: image/tiff; application=geotiff
-    # Collection # 11: NDWI as OGC API STAC (UNIGE)
+    # Collection # 13: NDWI as OGC API STAC (UNIGE)
     ndwi:
         type: stac-collection
         title: NDWI data as STAC
@@ -1024,7 +1094,7 @@ resources:
               data: data/ndwi/
               file_types:
                   - .tif
-    # Collection # 12: NDWI as OGC API EDR (UNIGE)
+    # Collection # 14: NDWI as OGC API EDR (UNIGE)
     ndwi-edr:
         type: collection
         title: NDWI as OGC API EDR
@@ -1052,46 +1122,6 @@ resources:
               format:
                   name: netcdf
                   mimetype: application/x-netcdf2
-    # Collection # 13: OGC API Tiles
-    ogcapi-tiles:
-        type: collection
-        title: Local Climate Zones
-        description: Local Climate Zones as OGC API Tiles
-        keywords:
-            - geoclimate
-            - urban heat islands
-            - osm
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://github.com/orbisgis/geoclimate
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [6.604342890453713,46.73864780045886,6.672052698054584,46.79537989717215]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin: 2011-11-11
-                end: null  # or empty
-        providers:
-            - type: feature
-              name: GeoJSON
-              data: data/rsu_lcz.geojson
-            - type: tile
-              name: MVT
-              data: data/tiles
-              options:
-                  metadata_format: tilejson # default | tilejson
-                  bounds: [[6.604342890453713,46.73864780045886],[6.672052698054584,46.79537989717215]]
-                  zoom:
-                      min: 0
-                      max: 16
-                  schemes:
-                      - WorldCRS84Quad
-              format:
-                  name: pbf
-                  mimetype: application/vnd.mapbox-vector-tile
     # Records # 7: NDWI Metadata
     ndwi-metadata:
         type: collection
@@ -1120,7 +1150,7 @@ resources:
               id_field: externalId
               time_field: recordCreated
               title_field: title
-    # # NDWI NetCDF
+    # Collection # 15: NDWI NetCDF
     # ndwi-nc:
     #     type: collection
     #     title: NetCDF file
@@ -1149,11 +1179,16 @@ resources:
     #               name: netcdf
     #               mimetype: application/x-netcdf2
     # Process #1
-    hello-world:
-        type: process
-        processor:
-            name: HelloWorld
-    # # Process #2 (Zonal Statistics) 
+    #hello-world:
+    #    type: process
+    #    processor:
+    #        name: HelloWorld
+    # # Process #2
+    # geom-details:
+    #     type: process
+    #     processor:
+    #         name: GeomDetails
+    # # Process #3 (Zonal Statistics) 
     # zonal-stats:
     #     type: process
     #     processor:
